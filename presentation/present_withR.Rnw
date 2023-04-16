@@ -21,7 +21,7 @@
 library(knitr)
 opts_chunk$set(
 fig.path='figures/fig', fig.show='hold', 
-	cache=TRUE, fig.height=4)
+	cache=F, fig.height=4)
 @
 
 
@@ -38,14 +38,248 @@ From \cite{Schwabe2022}:
 \textit{
 "The primary pharmacokinetic parameters were log-transformed and analyzed using an analysis of covariance (ANCOVA) model that included treatment as a fixed effect, \colorbox{yellow}{baseline weight} category $\left(\geq 60-\leq 80kg/>80\text{kg}-\leq 100\text{kg}\right)$, \colorbox{yellow}{baseline BMI} (continuous variable), and study site as covariates." 
 }
+\begin{center}
+$\boxed{\log(y)\sim trt + weight_{cat.} + BMI_{cont.}+ site}$
+\end{center}
 
 %===================================================
 \end{frame}
 \begin{frame}{What is the problem with this?}
 %===================================================
+\begin{center}
+$\boxed{\log(y)\sim trt + weight_{cat.} + BMI_{cont.}+ site}$
+\end{center}
+Since $\text{BMI}=\frac{\text{weight (kg)}}{\text{height (m)}^2}$
+\begin{center}
+$\boxed{\log(y)\sim trt + weight_{cat.} + \frac{weight_{cont.}}{height^2_{cont.}}+ site}$
+\end{center}
 
-$\text{BMI}=\frac{\text{weight (kg)}}{\text{height (m)}^2}$
+Thus, $weight$ and $BMI$ may be highly correlated (a special case of collinearity)!
 
+<<echo=F,eval = T, message=F>>=
+library(mvtnorm);library(tidyverse)
+n <- round(685 * 2/3,0)
+# bmi_m <- 24.5
+# bmi_sd <- 2.6
+height_m <- 170
+height_sd <- 7
+weight_m <- 73.5
+weight_sd <- 9.4
+beta <- c(5,5,2,2)
+
+sigma <- 2
+rho <- 0.5
+
+dgp <- function(rho,n,sigma,beta, bmi_m, bmi_sd, weight_m, weight_sd,show_data = FALSE){
+
+	# generate baseline covariates
+	X <- data.frame(mvtnorm::rmvnorm(n=n,
+												mean = c(height_m,weight_m),
+												sigma = matrix(c(height_sd^2,rho*height_sd*weight_sd,
+																				 rho*height_sd*weight_sd,weight_sd^2),nrow = 2, byrow = T)
+												))
+	
+	eps_y <- rnorm(n = n, mean = 0, sd = sigma)
+	
+	
+	colnames(X) <- c("height", "weight")
+	
+	# # recover height
+	# X$height <- sqrt(X$weight/X$bmi)
+	
+	# recover bmi
+	X$bmi <- X$weight/((X$height/100)^2)
+	
+	# categorical weight
+	X$weight_cat <- ifelse(X$weight > 80, ">80kg", "<=80" )
+	
+	# treatment randomization 1:1:1 within categorical weight
+	rand <- lapply(unique(X$weight_cat), function(x){
+		S_ind <- which(X$weight_cat==x)
+		Trt <- rep_len(c(0:1), length.out=length(S_ind))
+		return(cbind(S_ind,Trt))
+	})
+	rand <- data.frame(do.call("rbind", rand))
+	X$Trt <- rand$Trt[order(rand$S_ind)]
+	
+	#table(X$weight_cat,X$Trt)
+	
+	# outcome
+	#X$Y_log <- cbind(1,X$Trt,X$bmi, ifelse(X$weight_cat=="<=80",0,1)) %*% beta +eps_y
+	#X$Y_log <- cbind(1,X$Trt,X$bmi, X$weight) %*% beta + eps_y
+	X$Y_log <- cbind(1,X$Trt,X$height, X$weight) %*% beta + eps_y
+	
+	
+	#modelling
+	#m <- lm(data = X, Y_log~Trt + bmi + weight_cat)
+	m <- lm(data = X, Y_log~Trt + bmi + weight)
+	s <- data.frame(coef(summary(m)))
+	s$variable <- row.names(s)
+	s$model <- "m2:bmi+weight"
+
+	m <- lm(data = X, Y_log~Trt + height + weight)
+	s2 <- data.frame(coef(summary(m)))
+	s2$variable <- row.names(s2)
+	s2$model <- "m1:height+weight"
+	
+	m <- lm(data = X, Y_log~Trt + height)
+	s3 <- data.frame(coef(summary(m)))
+	s3$variable <- row.names(s3)
+	s3$model <- "m4:height"
+	
+	m <- lm(data = X, Y_log~Trt + weight)
+	s4 <- data.frame(coef(summary(m)))
+	s4$variable <- row.names(s4)
+	s4$model <- "m5:weight"
+	
+	
+	m <- lm(data = X, Y_log~Trt + bmi + height)
+	s5 <- data.frame(coef(summary(m)))
+	s5$variable <- row.names(s5)
+	s5$model <- "m3:bmi+height"
+	
+	m <- lm(data = X, Y_log~Trt + bmi )
+	s6 <- data.frame(coef(summary(m)))
+	s6$variable <- row.names(s6)
+	s6$model <- "m6:bmi"
+	
+	m <- lm(data = X, Y_log~Trt + bmi+height+weight )
+	s7 <- data.frame(coef(summary(m)))
+	s7$variable <- row.names(s7)
+	s7$model <- "m7:bmi+height+weight"
+	
+	
+	s <- rbind(s,s2,s3,s4,s5,s6,s7)
+	
+	
+	s$rho <- rho
+	s$rho_sim <- cor(X$height, X$weight)
+	
+	
+	#give back
+	if(show_data){
+		return(X)
+	}else{
+		return(s)
+	}
+}
+
+set.seed(324324)
+
+rho <- rep(seq(from = 0.7, to =0.999, length.out = 100),5)
+
+res <- lapply(rho, function(x){
+	dgp(rho=x,n = 100,sigma = sigma,beta=beta,bmi_m=bmi_m, bmi_sd = bmi_sd, weight_m = weight_m, weight_sd = weight_sd)
+})
+res <- do.call("rbind", res)
+row.names(res) <-NULL
+
+res$lower <- res$Estimate - qnorm(p = 0.95)*res$Std..Error
+res$upper <- res$Estimate + qnorm(p = 0.95)*res$Std..Error
+
+# add true values
+res <- left_join(res, data.frame("variable"=c("(Intercept)", "Trt", "height", "weight"),"true"=beta))
+
+
+#fill missing combination
+res <- as.data.frame(complete(res,variable,model,fill=list(NA) ))
+#table(res$variable,res$model)
+@
+
+
+%===================================================
+\end{frame}
+\begin{frame}{What is the problem with collinear variables in the model?}
+%===================================================
+
+Let's see what happens when the correlation between $height$ and $weight$ changes!
+
+\begin{figure}[h]%H is strict!
+\begin{center}
+<<collinearitydata, fig.height = 4, fig.width = 10,echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE,dev='pdf'>>=
+# dev.off()
+# dev.new()
+set.seed(324324)
+d1 <- dgp(rho=min(rho),n = 100,sigma = sigma,beta=beta,bmi_m=bmi_m, bmi_sd = bmi_sd, weight_m = weight_m, weight_sd = weight_sd, show_data = TRUE)
+par(mar  = c(5,5,2,4) ,mfrow = c(1,2))
+plot(d1$weight, d1$height,pch = 19,xlab = "weight [kg]", ylab = "height [m]", main = "Low correlation")
+par(new = T, mar  =  c(5,5,2,4) )
+plot(d1$weight, d1$bmi,col = "blue",pch = 19,xaxt = "n", xlab = "",ylab = "", yaxt = "n")
+mtext("BMI",side=4,col="blue",line=4) 
+axis(4, ylim=c(0,7000), col="blue",col.axis="blue",las=1)
+
+
+d1 <- dgp(rho=max(rho),n = 100,sigma = sigma,beta=beta,bmi_m=bmi_m, bmi_sd = bmi_sd, weight_m = weight_m, weight_sd = weight_sd, show_data = TRUE)
+par(mar  =c(5,5,2,5) )
+plot(d1$weight, d1$height,pch = 19,xlab = "weight [kg]", ylab = "height [m]", main = "High correlation")
+par(new = T, mar  = c(5,5,2,5) )
+plot(d1$weight, d1$bmi,col = "blue",pch = 19,xaxt = "n", xlab = "",ylab = "", yaxt = "n")
+mtext("BMI",side=4,col="blue",line=4) 
+axis(4, ylim=c(0,7000), col="blue",col.axis="blue",las=1)
+
+@
+\end{center}
+\end{figure}
+
+%===================================================
+\end{frame}
+\begin{frame}{Small simulation:}
+%===================================================
+
+\begin{center}
+$\boxed{\log(y)\sim trt + weight_{cat.} + BMI_{cont.}+ site}$
+
+For simplicity without $site$ and with continuous variables!
+
+"True" model: $\log(y)\sim 5 + 5\cdot trt + 2\cdot weight + 2\cdot height$
+
+
+
+
+
+\textcolor{red}{Dichotomia is a problem for a different day\dots}
+\end{center}
+
+
+% %===================================================
+% \end{frame}
+% \begin{frame}{Relation of variables}
+% %===================================================
+% \begin{enumerate}
+% \item paper: $AUC\sim trt + weight_{cat.} + BMI_{cont.}\textcolor{gray}{+ site}$
+% 
+% $AUC\sim trt + weight_{cat.} + \frac{weight_{cont.}}{height_{cont.}^2}\textcolor{gray}{+ site}$
+% \item a1: $AUC\sim trt + weight_{cat.} + height_{cont.}\textcolor{gray}{+ site}$
+% \item a2: $AUC\sim trt + weight_{cont.} + height_{cont.}\textcolor{gray}{+ site}$
+% \end{enumerate}
+% 
+% Let's see what happens when the correlation between $height$ and $weight$ changes!
+
+%===================================================
+\end{frame}
+\begin{frame}[plain]{Small simulation: Results}
+%===================================================
+
+\begin{figure}[h]%H is strict!
+\begin{center}
+<<results, fig.height = 8, fig.width = 11,echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE,dev='pdf'>>=
+
+res$variable <- factor(res$variable,levels=c("bmi","weight","height", "Trt"))
+
+res %>%
+	filter(variable != "(Intercept)")%>%
+	ggplot(aes(x=rho_sim,y =Estimate,col = model ))+
+	geom_point()+
+	geom_errorbar(aes(ymin = lower, ymax = upper), width = 0.05)+
+	geom_smooth(col = "black", se = F)+
+	geom_hline(aes(yintercept = true), col = "red" )+
+	facet_wrap(variable~model, scales = "free",
+						 ncol = length(unique(res$model)))+
+	labs(x = "Correlation between weight and height",
+			 y = "Estimate and 90% Confidence Interval")
+@
+\end{center}
+\end{figure}
 
 %===================================================
 \end{frame}
@@ -90,11 +324,16 @@ $\text{BMI}=\frac{\text{weight (kg)}}{\text{height (m)}^2}$
 $\boxed{\text{BMI}=\frac{\text{weight (kg)}}{\text{height (m)}^2}}$
 \end{center}
 
-
+%===================================================
+\end{frame}
+\begin{frame}{But why this model?}
+%===================================================
+\centering
+\huge{\textbf{Domain knowledge?}}
 
 %===================================================
 \end{frame}
-\begin{frame}[plain]{But it may not be successful\dots}
+\begin{frame}[plain]{But why this model?}
 %===================================================
 ICH E9:
 \textit{
@@ -106,173 +345,61 @@ ICH E9:
 
 %===================================================
 \end{frame}
-\begin{frame}{Relation of variables}
-%===================================================
-\begin{enumerate}
-\item paper: $AUC\sim trt + weight_{cat.} + BMI_{cont.}\textcolor{gray}{+ site}$
-
-$AUC\sim trt + weight_{cat.} + \frac{weight_{cont.}}{height_{cont.}^2}\textcolor{gray}{+ site}$
-\item a1: $AUC\sim trt + weight_{cat.} + height_{cont.}\textcolor{gray}{+ site}$
-\item a2: $AUC\sim trt + weight_{cont.} + height_{cont.}\textcolor{gray}{+ site}$
-\end{enumerate}
-
-Let's see what happens when the correlation between $height$ and $weight$ changes!
-
-
-<<echo=F,eval = T, message=F>>=
-library(mvtnorm);library(tidyverse)
-n <- round(685 * 2/3,0)
-bmi_m <- 24.5
-bmi_sd <- 2.6
-weight_m <- 73.5
-weight_sd <- 9.4
-beta <- c(5,5,2,2)
-
-sigma <- 2
-rho <- 0.5
-
-dgp <- function(rho,n,sigma,beta, bmi_m, bmi_sd, weight_m, weight_sd,show_data = FALSE){
-
-	# generate baseline covariates
-	X <- data.frame(mvtnorm::rmvnorm(n=n,
-												mean = c(bmi_m,weight_m),
-												sigma = matrix(c(bmi_sd^2,rho*bmi_sd*weight_sd,
-																				 rho*bmi_sd*weight_sd,weight_sd^2),nrow = 2, byrow = T)
-												))
-	
-	eps_y <- rnorm(n = n, mean = 0, sd = sigma)
-	
-	
-	colnames(X) <- c("bmi", "weight")
-	
-	# recover height
-	X$height <- sqrt(X$weight/X$bmi)
-	
-	# categorical weight
-	X$weight_cat <- ifelse(X$weight > 80, ">80kg", "<=80" )
-	
-	# treatment randomization 1:1:1 within categorical weight
-	rand <- lapply(unique(X$weight_cat), function(x){
-		S_ind <- which(X$weight_cat==x)
-		Trt <- rep_len(c(0:1), length.out=length(S_ind))
-		return(cbind(S_ind,Trt))
-	})
-	rand <- data.frame(do.call("rbind", rand))
-	X$Trt <- rand$Trt[order(rand$S_ind)]
-	
-	#table(X$weight_cat,X$Trt)
-	
-	# outcome
-	#X$Y_log <- cbind(1,X$Trt,X$bmi, ifelse(X$weight_cat=="<=80",0,1)) %*% beta +eps_y
-	#X$Y_log <- cbind(1,X$Trt,X$bmi, X$weight) %*% beta + eps_y
-	X$Y_log <- cbind(1,X$Trt,X$height, X$weight) %*% beta + eps_y
-	
-	
-	#modelling
-	m <- lm(data = X, Y_log~Trt + bmi + weight_cat)
-	#m <- lm(data = X, Y_log~Trt + bmi + weight)
-	s <- data.frame(coef(summary(m)))
-	s$variable <- row.names(s)
-	s$model <- "paper"
-
-	m <- lm(data = X, Y_log~Trt + height + weight_cat)
-	#m <- lm(data = X, Y_log~Trt + height + weight)
-	s2 <- data.frame(coef(summary(m)))
-	s2$variable <- row.names(s2)
-	s2$model <- "a1"
-	
-	m <- lm(data = X, Y_log~Trt + height + weight)
-	s3 <- data.frame(coef(summary(m)))
-	s3$variable <- row.names(s3)
-	s3$model <- "a2"
-	
-	
-	s <- rbind(s,s2,s3)
-	
-	
-	s$rho <- rho
-	s$rho_sim <- cor(X$bmi, X$weight)
-	
-	
-	#give back
-	if(show_data){
-		return(X)
-	}else{
-		return(s)
-	}
-}
-
-set.seed(324324)
-
-rho <- rep(seq(from = 0.5, to =0.99, length.out = 100),8)
-
-res <- lapply(rho, function(x){
-	dgp(rho=x,n = 100,sigma = sigma,beta=beta,bmi_m=bmi_m, bmi_sd = bmi_sd, weight_m = weight_m, weight_sd = weight_sd)
-})
-res <- do.call("rbind", res)
-row.names(res) <-NULL
-
-res$lower <- res$Estimate - qnorm(p = 0.95)*res$Std..Error
-res$upper <- res$Estimate + qnorm(p = 0.95)*res$Std..Error
-
-# add true values
-res <- left_join(res, data.frame("variable"=c("(Intercept)", "Trt", "height", "weight"),"true"=beta))
-@
-
-%===================================================
-\end{frame}
-\begin{frame}{Relation of variables}
+\begin{frame}{Collinearity != Correlation}
 %===================================================
 
-\begin{figure}[h]%H is strict!
-\begin{center}
-<<collinearitydata, fig.height = 6, fig.width = 10,echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE,dev='pdf'>>=
-# dev.off()
-# dev.new()
-set.seed(324324)
-d1 <- dgp(rho=min(rho),n = 100,sigma = sigma,beta=beta,bmi_m=bmi_m, bmi_sd = bmi_sd, weight_m = weight_m, weight_sd = weight_sd, show_data = TRUE)
-par(mar  = c(5,5,2,4) ,mfrow = c(1,2))
-plot(d1$weight, d1$height,pch = 19,xlab = "weight [kg]", ylab = "height [m]", main = "Low correlation")
-abline(v = 80)
-par(new = T, mar  =  c(5,5,2,4) )
-plot(d1$weight, d1$bmi,col = "blue",pch = 19,xaxt = "n", xlab = "",ylab = "", yaxt = "n")
-mtext("BMI",side=4,col="blue",line=4) 
-axis(4, ylim=c(0,7000), col="blue",col.axis="blue",las=1)
+\begin{itemize}
+\item Correlation is a special case of collinearity (includes only two variables)
+\item Problems can also arise without large (pairwise) correlations
+\item For example when explanatory variables add up to 100\% (recipe)
+\end{itemize}
 
 
-d1 <- dgp(rho=max(rho),n = 100,sigma = sigma,beta=beta,bmi_m=bmi_m, bmi_sd = bmi_sd, weight_m = weight_m, weight_sd = weight_sd, show_data = TRUE)
-par(mar  =c(5,5,2,5) )
-plot(d1$weight, d1$height,pch = 19,xlab = "weight [kg]", ylab = "height [m]", main = "High correlation")
-abline(v = 80)
-par(new = T, mar  = c(5,5,2,5) )
-plot(d1$weight, d1$bmi,col = "blue",pch = 19,xaxt = "n", xlab = "",ylab = "", yaxt = "n")
-mtext("BMI",side=4,col="blue",line=4) 
-axis(4, ylim=c(0,7000), col="blue",col.axis="blue",las=1)
+\begin{table}[]
+\centering
+%\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|l|l|}
+\hline
+milk & water & ... & salt \\ 
+\hline
+40\% & 30\%  & ... & 1\%  \\ 
+45\% & 35\%  & ... & 2\%  \\
+\dots& \dots  & \dots & \dots  \\ \hline
+\end{tabular}%
+%}
+\end{table}
+
+<<coupling, echo=F, eval = F>>=
+n <- 100
+set.seed(234324)
+x1 <- round(runif(n,0,0.2),2)
+x2 <- round(runif(n,0,0.4),2)
+x3 <- round(runif(n,0,0.2),2)
+x4 <- 1-x1-x2-x3
+beta <- rpois(n=4+1,lambda = 5)
+y <- cbind(1,x1,x2,x3,x4) %*% beta + rnorm(n = n, mean = 0, sd = 1)
+d <- data.frame(x1,x2,x3,x4,y)
+m <- lm(data = d, y~.)
+summary(m)
+confint(m)
+beta
+
+X <- model.matrix(m)
+solve(t(X)%*%X)
+
+cor(d[,-5])
+solve(cor(d[,-5]))
 
 @
-\end{center}
-\end{figure}
 
 
 %===================================================
 \end{frame}
-\begin{frame}[plain]{Results}
+\begin{frame}{ }
 %===================================================
-
-\begin{figure}[h]%H is strict!
-\begin{center}
-<<results, fig.height = 6, fig.width = 10,echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE,dev='pdf'>>=
-res %>%
-	filter(variable != "(Intercept)")%>%
-	ggplot(aes(x=rho_sim,y =Estimate,col = model ))+
-	geom_point()+
-	geom_errorbar(aes(ymin = lower, ymax = upper), width = 0.05)+
-	geom_hline(aes(yintercept = true), col = "black" )+
-	facet_wrap(variable~., scales = "free")
-@
-\end{center}
-\end{figure}
-
+Recipes remain secret!
+\centering
+\includegraphics[width=0.9\textwidth]{appenzeller.png}
 
 %===================================================
 \end{frame}
@@ -280,9 +407,10 @@ res %>%
 %===================================================
 
 \begin{itemize}
-\item Collinearity increases uncertainty (only the variables that are included)
-\item The closer we model "nature", the lower our residual standard error -> more power! (avoid dichotomization)
-\item A bit more sophisticated randomization may not hurt \dots\end{itemize}
+\item Collinearity increases uncertainty (but only for the variables that contribute)
+\item "Avoiding" collinearity may induce bias
+\item Randomization to the help
+\end{itemize}
 
 
 %===================================================

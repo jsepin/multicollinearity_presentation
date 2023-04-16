@@ -84,14 +84,90 @@ From \cite{Schwabe2022}:
 \textit{
 "The primary pharmacokinetic parameters were log-transformed and analyzed using an analysis of covariance (ANCOVA) model that included treatment as a fixed effect, \colorbox{yellow}{baseline weight} category $\left(\geq 60-\leq 80kg/>80\text{kg}-\leq 100\text{kg}\right)$, \colorbox{yellow}{baseline BMI} (continuous variable), and study site as covariates." 
 }
+\begin{center}
+$\boxed{\log(y)\sim trt + weight_{cat.} + BMI_{cont.}+ site}$
+\end{center}
 
 %===================================================
 \end{frame}
 \begin{frame}{What is the problem with this?}
 %===================================================
+\begin{center}
+$\boxed{\log(y)\sim trt + weight_{cat.} + BMI_{cont.}+ site}$
+\end{center}
+Since $\text{BMI}=\frac{\text{weight (kg)}}{\text{height (m)}^2}$
+\begin{center}
+$\boxed{\log(y)\sim trt + weight_{cat.} + \frac{weight_{cont.}}{height^2_{cont.}}+ site}$
+\end{center}
 
-$\text{BMI}=\frac{\text{weight (kg)}}{\text{height (m)}^2}$
+Thus, $weight$ and $BMI$ may be highly correlated (a special case of collinearity)!
 
+
+
+
+%===================================================
+\end{frame}
+\begin{frame}{What is the problem with collinear variables in the model?}
+%===================================================
+
+Let's see what happens when the correlation between $height$ and $weight$ changes!
+
+\begin{figure}[h]%H is strict!
+\begin{center}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=\maxwidth]{figures/figcollinearitydata-1} 
+\end{knitrout}
+\end{center}
+\end{figure}
+
+%===================================================
+\end{frame}
+\begin{frame}{Small simulation:}
+%===================================================
+
+\begin{center}
+$\boxed{\log(y)\sim trt + weight_{cat.} + BMI_{cont.}+ site}$
+
+For simplicity without $site$ and with continuous variables!
+
+"True" model: $\log(y)\sim 5 + 5\cdot trt + 2\cdot weight + 2\cdot height$
+
+
+
+
+
+\textcolor{red}{Dichotomia is a problem for a different day\dots}
+\end{center}
+
+
+% %===================================================
+% \end{frame}
+% \begin{frame}{Relation of variables}
+% %===================================================
+% \begin{enumerate}
+% \item paper: $AUC\sim trt + weight_{cat.} + BMI_{cont.}\textcolor{gray}{+ site}$
+% 
+% $AUC\sim trt + weight_{cat.} + \frac{weight_{cont.}}{height_{cont.}^2}\textcolor{gray}{+ site}$
+% \item a1: $AUC\sim trt + weight_{cat.} + height_{cont.}\textcolor{gray}{+ site}$
+% \item a2: $AUC\sim trt + weight_{cont.} + height_{cont.}\textcolor{gray}{+ site}$
+% \end{enumerate}
+% 
+% Let's see what happens when the correlation between $height$ and $weight$ changes!
+
+%===================================================
+\end{frame}
+\begin{frame}[plain]{Small simulation: Results}
+%===================================================
+
+\begin{figure}[h]%H is strict!
+\begin{center}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=\maxwidth]{figures/figresults-1} 
+\end{knitrout}
+\end{center}
+\end{figure}
 
 %===================================================
 \end{frame}
@@ -136,11 +212,16 @@ $\text{BMI}=\frac{\text{weight (kg)}}{\text{height (m)}^2}$
 $\boxed{\text{BMI}=\frac{\text{weight (kg)}}{\text{height (m)}^2}}$
 \end{center}
 
-
+%===================================================
+\end{frame}
+\begin{frame}{But why this model?}
+%===================================================
+\centering
+\huge{\textbf{Domain knowledge?}}
 
 %===================================================
 \end{frame}
-\begin{frame}[plain]{But it may not be successful\dots}
+\begin{frame}[plain]{But why this model?}
 %===================================================
 ICH E9:
 \textit{
@@ -152,50 +233,40 @@ ICH E9:
 
 %===================================================
 \end{frame}
-\begin{frame}{Relation of variables}
-%===================================================
-\begin{enumerate}
-\item paper: $AUC\sim trt + weight_{cat.} + BMI_{cont.}\textcolor{gray}{+ site}$
-
-$AUC\sim trt + weight_{cat.} + \frac{weight_{cont.}}{weight_{cont.}^2}\textcolor{gray}{+ site}$
-\item a1: $AUC\sim trt + weight_{cat.} + height_{cont.}\textcolor{gray}{+ site}$
-\item a2: $AUC\sim trt + weight_{cont.} + height_{cont.}\textcolor{gray}{+ site}$
-\end{enumerate}
-
-Let's see what happens when the correlation between $height$ and $weight$ changes!
-
-
-
-
-%===================================================
-\end{frame}
-\begin{frame}{Relation of variables}
+\begin{frame}{Collinearity != Correlation}
 %===================================================
 
-\begin{figure}[h]%H is strict!
-\begin{center}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=\maxwidth]{figures/figcollinearitydata-1} 
-\end{knitrout}
-\end{center}
-\end{figure}
+\begin{itemize}
+\item Correlation is a special case of collinearity (includes only two variables)
+\item Problems can also arise without large (pairwise) correlations
+\item For example when explanatory variables add up to 100\% (recipe)
+\end{itemize}
+
+
+\begin{table}[]
+\centering
+%\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|l|l|}
+\hline
+milk & water & ... & salt \\ 
+\hline
+40\% & 30\%  & ... & 1\%  \\ 
+45\% & 35\%  & ... & 2\%  \\
+\dots& \dots  & \dots & \dots  \\ \hline
+\end{tabular}%
+%}
+\end{table}
+
+
 
 
 %===================================================
 \end{frame}
-\begin{frame}[plain]{Results}
+\begin{frame}{ }
 %===================================================
-
-\begin{figure}[h]%H is strict!
-\begin{center}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=\maxwidth]{figures/figresults-1} 
-\end{knitrout}
-\end{center}
-\end{figure}
-
+Recipes remain secret!
+\centering
+\includegraphics[width=0.9\textwidth]{appenzeller.png}
 
 %===================================================
 \end{frame}
@@ -203,9 +274,10 @@ Let's see what happens when the correlation between $height$ and $weight$ change
 %===================================================
 
 \begin{itemize}
-\item Collinearity increases uncertainty (only the variables that are included)
-\item The closer we model "nature", the lower our residual standard error -> more power! (avoid dichotomization)
-\item A bit more sophisticated randomization may not hurt \dots\end{itemize}
+\item Collinearity increases uncertainty (but only for the variables that contribute)
+\item "Avoiding" collinearity may induce bias
+\item Randomization to the help
+\end{itemize}
 
 
 %===================================================

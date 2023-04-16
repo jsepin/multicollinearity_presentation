@@ -1,16 +1,14 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.4.12)  14 APR 2023 20:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.7.30)  16 APR 2023 21:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**\bgroup\catcode62=2\relax \catcode`\_=12\relax \toks0\bgroup\input ./present_
-withR.tex \relax>\expandafter\egroup\the\toks0\relax
- (present_withR.tex
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer.cls
-Document Class: beamer 2023/02/20 v3.69 A class for typesetting presentations
-
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasemodes
-.sty
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+**\nonstopmode \bgroup\catcode62=2\relax \catcode`\_=12\relax \toks0\bgroup\inp
+ut ./present_withR.tex \relax>\expandafter\egroup\the\toks0\relax
+(present_withR.tex
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamer.cls
+Document Class: beamer 2022/05/17 v3.67 A class for typesetting presentations
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbasemodes.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count185
 )
@@ -18,8 +16,7 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \beamer@tempcount=\count186
 \c@beamerpauses=\count187
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasedecod
-e.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbasedecode.sty
 \beamer@slideinframe=\count188
 \beamer@minimum=\count189
 \beamer@decode@box=\box52
@@ -27,26 +24,26 @@ e.sty
 \beamer@commentbox=\box53
 \beamer@modecount=\count190
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+(/home/jerome/.miktex/texmfs/install/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 )
-\headdp=\dimen140
-\footheight=\dimen141
-\sidebarheight=\dimen142
-\beamer@tempdim=\dimen143
-\beamer@finalheight=\dimen144
-\beamer@animht=\dimen145
-\beamer@animdp=\dimen146
-\beamer@animwd=\dimen147
-\beamer@leftmargin=\dimen148
-\beamer@rightmargin=\dimen149
-\beamer@leftsidebar=\dimen150
-\beamer@rightsidebar=\dimen151
-\beamer@boxsize=\dimen152
-\beamer@vboxoffset=\dimen153
-\beamer@descdefault=\dimen154
-\beamer@descriptionwidth=\dimen155
-\beamer@lastskip=\skip48
+\headdp=\dimen138
+\footheight=\dimen139
+\sidebarheight=\dimen140
+\beamer@tempdim=\dimen141
+\beamer@finalheight=\dimen142
+\beamer@animht=\dimen143
+\beamer@animdp=\dimen144
+\beamer@animwd=\dimen145
+\beamer@leftmargin=\dimen146
+\beamer@rightmargin=\dimen147
+\beamer@leftsidebar=\dimen148
+\beamer@rightsidebar=\dimen149
+\beamer@boxsize=\dimen150
+\beamer@vboxoffset=\dimen151
+\beamer@descdefault=\dimen152
+\beamer@descriptionwidth=\dimen153
+\beamer@lastskip=\skip47
 \beamer@areabox=\box54
 \beamer@animcurrent=\box55
 \beamer@animshowbox=\box56
@@ -74,158 +71,147 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \beamer@toclastsection=\count275
 \beamer@tocsectionnumber=\count276
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseoptio
-ns.sty
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbaseoptions.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 ))
-\beamer@paperwidth=\skip49
-\beamer@paperheight=\skip50
+\beamer@paperwidth=\skip48
+\beamer@paperheight=\skip49
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+(/home/jerome/.miktex/texmfs/install/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 \Gm@cnth=\count277
 \Gm@cntv=\count278
 \c@Gm@tempcnt=\count279
-\Gm@bindingoffset=\dimen156
-\Gm@wd@mp=\dimen157
-\Gm@odd@mp=\dimen158
-\Gm@even@mp=\dimen159
-\Gm@layoutwidth=\dimen160
-\Gm@layoutheight=\dimen161
-\Gm@layouthoffset=\dimen162
-\Gm@layoutvoffset=\dimen163
+\Gm@bindingoffset=\dimen154
+\Gm@wd@mp=\dimen155
+\Gm@odd@mp=\dimen156
+\Gm@even@mp=\dimen157
+\Gm@layoutwidth=\dimen158
+\Gm@layoutheight=\dimen159
+\Gm@layouthoffset=\dimen160
+\Gm@layoutvoffset=\dimen161
 \Gm@dimlist=\toks17
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)
-) (C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
-
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.s
-ty
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfuti
-l-common.tex
+(/home/jerome/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg))
+(/home/jerome/.miktex/texmfs/install/tex/latex/pgf/math/pgfmath.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfrcs.sty
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common.t
+ex
 \pgfutil@everybye=\toks18
-\pgfutil@tempdima=\dimen164
-\pgfutil@tempdimb=\dimen165
-)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfuti
-l-latex.def
+\pgfutil@tempdima=\dimen162
+\pgfutil@tempdimb=\dimen163
+
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common-l
+ists.tex))
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-latex.de
+f
 \pgfutil@abb=\box60
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs
-.code.tex
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex
-)
-Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
 ))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.
-sty
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkey
-s.code.tex
+(/home/jerome/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfkeys.sty
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks19
 \pgfkeys@temptoks=\toks20
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkey
-slibraryfiltered.code.tex
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeysfiltered.
+code.tex
 \pgfkeys@tmptoks=\toks21
 )))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.cod
-e.tex
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil
-.code.tex
-\pgf@x=\dimen166
-\pgf@xa=\dimen167
-\pgf@xb=\dimen168
-\pgf@xc=\dimen169
-\pgf@y=\dimen170
-\pgf@ya=\dimen171
-\pgf@yb=\dimen172
-\pgf@yc=\dimen173
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathutil.code.tex
+\pgf@x=\dimen164
+\pgf@xa=\dimen165
+\pgf@xb=\dimen166
+\pgf@xc=\dimen167
+\pgf@y=\dimen168
+\pgf@ya=\dimen169
+\pgf@yb=\dimen170
+\pgf@yc=\dimen171
 \c@pgf@counta=\count280
 \c@pgf@countb=\count281
 \c@pgf@countc=\count282
 \c@pgf@countd=\count283
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathpars
-er.code.tex
-\pgfmath@dimen=\dimen174
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathparser.code.te
+x
+\pgfmath@dimen=\dimen172
 \pgfmath@count=\count284
 \pgfmath@box=\box61
 \pgfmath@toks=\toks22
 \pgfmath@stack@operand=\toks23
 \pgfmath@stack@operation=\toks24
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
-tions.code.tex)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
-tions.basic.code.tex)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
-tions.trigonometric.code.tex)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
-tions.random.code.tex)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
-tions.comparison.code.tex)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
-tions.base.code.tex)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
-tions.round.code.tex)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
-tions.misc.code.tex)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
-tions.integerarithmetics.code.tex)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.code
+.tex
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.basi
+c.code.tex)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.trig
+onometric.code.tex)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.rand
+om.code.tex)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.comp
+arison.code.tex)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.base
 .code.tex)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloa
-t.code.tex
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.roun
+d.code.tex)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.misc
+.code.tex)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.inte
+gerarithmetics.code.tex)))
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count285
-)))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
-File: size11.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+))) (/home/jerome/.miktex/texmfs/install/tex/latex/base/size11.clo
+File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore
-.sty
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgfcore.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.
-cfg
+(/home/jerome/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.de
-f
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+(/home/jerome/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen175
-\Gin@req@width=\dimen176
+\Gin@req@height=\dimen173
+\Gin@req@width=\dimen174
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys
-.sty
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
-ys.code.tex
-Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
-\pgf@x=\dimen177
-\pgf@y=\dimen178
-\pgf@xa=\dimen179
-\pgf@ya=\dimen180
-\pgf@xb=\dimen181
-\pgf@yb=\dimen182
-\pgf@xc=\dimen183
-\pgf@yc=\dimen184
-\pgf@xd=\dimen185
-\pgf@yd=\dimen186
+(/home/jerome/.miktex/texmfs/install/tex/latex/pgf/systemlayer/pgfsys.sty
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys.code.te
+x
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex
+)
+\pgf@x=\dimen175
+\pgf@y=\dimen176
+\pgf@xa=\dimen177
+\pgf@ya=\dimen178
+\pgf@xb=\dimen179
+\pgf@yb=\dimen180
+\pgf@xc=\dimen181
+\pgf@yc=\dimen182
+\pgf@xd=\dimen183
+\pgf@yd=\dimen184
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
 \c@pgf@counta=\count286
@@ -236,41 +222,37 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 \t@pgf@tokb=\toks26
 \t@pgf@tokc=\toks27
 \pgf@sys@id@count=\count290
-
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.
-cfg
-File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+ (/home/jerome/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
-ys-pdftex.def
-File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-pdftex.
+def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
-ys-common-pdf.def
-File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-common-
+pdf.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 )))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
-yssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsyssoftpath
+.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfsyssoftpath@smallbuffer@items=\count291
 \pgfsyssoftpath@bigbuffer@items=\count292
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
-ysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsysprotocol
+.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (/home/jerome/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+(/home/jerome/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx
-)
+(/home/jerome/.miktex/texmfs/install/tex/latex-dev/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
 Package xcolor Info: Model `RGB' extended on input line 1369.
@@ -281,235 +263,225 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-re.code.tex
-Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
-
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code
-.tex)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-repoints.code.tex
-File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen187
-\pgf@picmaxx=\dimen188
-\pgf@picminy=\dimen189
-\pgf@picmaxy=\dimen190
-\pgf@pathminx=\dimen191
-\pgf@pathmaxx=\dimen192
-\pgf@pathminy=\dimen193
-\pgf@pathmaxy=\dimen194
-\pgf@xx=\dimen195
-\pgf@xy=\dimen196
-\pgf@yx=\dimen197
-\pgf@yy=\dimen198
-\pgf@zx=\dimen199
-\pgf@zy=\dimen256
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcore.code.te
+x
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+ (/home/jerome/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/math/pgfint.code.tex)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepoints.c
+ode.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen185
+\pgf@picmaxx=\dimen186
+\pgf@picminy=\dimen187
+\pgf@picmaxy=\dimen188
+\pgf@pathminx=\dimen189
+\pgf@pathmaxx=\dimen190
+\pgf@pathminy=\dimen191
+\pgf@pathmaxy=\dimen192
+\pgf@xx=\dimen193
+\pgf@xy=\dimen194
+\pgf@yx=\dimen195
+\pgf@yy=\dimen196
+\pgf@zx=\dimen197
+\pgf@zy=\dimen198
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-repathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen257
-\pgf@path@lasty=\dimen258
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathcons
+truct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen199
+\pgf@path@lasty=\dimen256
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-repathusage.code.tex
-File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen259
-\pgf@shorten@start@additional=\dimen260
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathusag
+e.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen257
+\pgf@shorten@start@additional=\dimen258
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-rescopes.code.tex
-File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorescopes.c
+ode.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfpic=\box62
 \pgf@hbox=\box63
 \pgf@layerbox@main=\box64
 \pgf@picture@serial@count=\count293
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-regraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen261
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoregraphics
+tate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen259
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-retransformations.code.tex
-File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen262
-\pgf@pt@y=\dimen263
-\pgf@pt@temp=\dimen264
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretransfor
+mations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen260
+\pgf@pt@y=\dimen261
+\pgf@pt@temp=\dimen262
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-requick.code.tex
-File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorequick.co
+de.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-reobjects.code.tex
-File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreobjects.
+code.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-repathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathproc
+essing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-rearrows.code.tex
-File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen265
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorearrows.c
+ode.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen263
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-reshade.code.tex
-File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen266
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreshade.co
+de.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen264
 \pgf@sys@shading@range@num=\count294
 \pgf@shadingcount=\count295
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-reimage.code.tex
-File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-reexternal.code.tex
-File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreimage.co
+de.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreexternal
+.code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfexternal@startupbox=\box65
+))
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorelayers.c
+ode.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-relayers.code.tex
-File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretranspar
+ency.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-retransparency.code.tex
-File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepatterns
+.code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-repatterns.code.tex
-File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-rerdf.code.tex
-File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorerdf.code
+.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\xxcolor.
-sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/pgf/utilities/xxcolor.sty
 Package: xxcolor 2003/10/24 ver 0.1
 \XC@nummixins=\count296
 \XC@countmixins=\count297
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
-) (C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
-y
-Package: hyperref 2023-02-07 v7.00v Hypertext links for LaTeX
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+)
+(/home/jerome/.miktex/texmfs/install/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2022-06-20 v7.00s Hypertext links for LaTeX
+
+(/home/jerome/.miktex/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmd
-s.sty
+(/home/jerome/.miktex/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.
-sty
+(/home/jerome/.miktex/texmfs/install/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.st
-y
-Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+(/home/jerome/.miktex/texmfs/install/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefin
-ekeys.sty
+(/home/jerome/.miktex/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.
-sty
+) (/home/jerome/.miktex/texmfs/install/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacr
-o.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
 Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\getti
-tlestring.sty
+(/home/jerome/.miktex/texmfs/install/tex/generic/gettitlestring/gettitlestring.
+sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.st
-y
+ (/home/jerome/.miktex/texmfs/install/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count298
 )
-\@linkdim=\dimen267
+\@linkdim=\dimen265
 \Hy@linkcounter=\count299
 \Hy@pagecounter=\count300
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
-File: pd1enc.def 2023-02-07 v7.00v Hyperref: PDFDocEncoding definition (HO)
+(/home/jerome/.miktex/texmfs/install/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2022-06-20 v7.00s Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+(/home/jerome/.miktex/texmfs/install/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.st
-y
+(/home/jerome/.miktex/texmfs/install/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count301
- (C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
-File: puenc.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (HO)
+
+(/home/jerome/.miktex/texmfs/install/tex/latex/hyperref/puenc.def
+File: puenc.def 2022-06-20 v7.00s Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `bookmarks' set `true' on input line 4060.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 4060.
-Package hyperref Info: Option `implicit' set `false' on input line 4060.
-Package hyperref Info: Hyper figures OFF on input line 4177.
-Package hyperref Info: Link nesting OFF on input line 4182.
-Package hyperref Info: Hyper index ON on input line 4185.
-Package hyperref Info: Plain pages OFF on input line 4192.
-Package hyperref Info: Backreferencing OFF on input line 4197.
+Package hyperref Info: Option `bookmarks' set `true' on input line 4045.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4045.
+Package hyperref Info: Option `implicit' set `false' on input line 4045.
+Package hyperref Info: Hyper figures OFF on input line 4162.
+Package hyperref Info: Link nesting OFF on input line 4167.
+Package hyperref Info: Hyper index ON on input line 4170.
+Package hyperref Info: Plain pages OFF on input line 4177.
+Package hyperref Info: Backreferencing OFF on input line 4182.
 Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
-Package hyperref Info: Bookmarks ON on input line 4425.
+Package hyperref Info: Bookmarks ON on input line 4408.
 \c@Hy@tempcnt=\count302
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+
+(/home/jerome/.miktex/texmfs/install/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen268
+LaTeX Info: Redefining \url on input line 4746.
+\XeTeXLinkMargin=\dimen266
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(/home/jerome/.miktex/texmfs/install/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcal
-c.sty
+(/home/jerome/.miktex/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
 \Fld@menulength=\count303
-\Field@Width=\dimen269
-\Fld@charsize=\dimen270
-Package hyperref Info: Hyper figures OFF on input line 6042.
-Package hyperref Info: Link nesting OFF on input line 6047.
-Package hyperref Info: Hyper index ON on input line 6050.
-Package hyperref Info: backreferencing OFF on input line 6057.
-Package hyperref Info: Link coloring OFF on input line 6062.
-Package hyperref Info: Link coloring with OCG OFF on input line 6067.
-Package hyperref Info: PDF/A mode OFF on input line 6072.
+\Field@Width=\dimen267
+\Fld@charsize=\dimen268
+Package hyperref Info: Hyper figures OFF on input line 6024.
+Package hyperref Info: Link nesting OFF on input line 6029.
+Package hyperref Info: Hyper index ON on input line 6032.
+Package hyperref Info: backreferencing OFF on input line 6039.
+Package hyperref Info: Link coloring OFF on input line 6044.
+Package hyperref Info: Link coloring with OCG OFF on input line 6049.
+Package hyperref Info: PDF/A mode OFF on input line 6054.
 \Hy@abspage=\count304
 
 
@@ -517,10 +489,10 @@ Package hyperref Message: Stopped early.
 
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2023-02-07 v7.00v Hyperref driver for pdfTeX
+ (/home/jerome/.miktex/texmfs/install/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2022-06-20 v7.00s Hyperref driver for pdfTeX
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
@@ -528,27 +500,24 @@ with kernel methods
 \Fld@listcount=\count305
 \c@bookmark@seq@number=\count306
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfi
-lecheck.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.st
+y
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\unique
-counter.sty
+(/home/jerome/.miktex/texmfs/install/tex/generic/uniquecounter/uniquecounter.st
+y
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 ))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaserequi
-res.sty
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasecompa
-tibility.sty)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasefont.
-sty
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbaserequires.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbasecompatibility.s
+ty) (/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbasefont.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks28
 \symAMSa=\mathgroup4
@@ -557,148 +526,121 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/sansmathaccent\sansmat
-haccent.sty
-Package: sansmathaccent 2020/01/31
-
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile.s
-ty
-Package: scrlfile 2022/10/12 v3.38 KOMA-Script package (file load hooks)
-
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile-h
-ook.sty
-Package: scrlfile-hook 2022/10/12 v3.38 KOMA-Script package (using LaTeX hooks)
-
-
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlogo.st
+(/home/jerome/.miktex/texmfs/install/tex/latex/sansmathaccent/sansmathaccent.st
 y
-Package: scrlogo 2022/10/12 v3.38 KOMA-Script package (logo)
+Package: sansmathaccent 2020/01/31
+ (/home/jerome/.miktex/texmfs/install/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2022/07/04 v3.37 KOMA-Script package (file load hooks)
+
+(/home/jerome/.miktex/texmfs/install/tex/latex/koma-script/scrlfile-hook.sty
+Package: scrlfile-hook 2022/07/04 v3.37 KOMA-Script package (using LaTeX hooks)
+
+
+(/home/jerome/.miktex/texmfs/install/tex/latex/koma-script/scrlogo.sty
+Package: scrlogo 2022/07/04 v3.37 KOMA-Script package (logo)
 )))))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetrans
-lator.sty
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator.
-sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbasetranslator.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/translator/translator.sty
 Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
 ))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasemisc.
-sty)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetwosc
-reens.sty)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseoverl
-ay.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbasemisc.sty)
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbasetwoscreens.sty)
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbaseoverlay.sty
 \beamer@argscount=\count307
-\beamer@lastskipcover=\skip51
+\beamer@lastskipcover=\skip50
 \beamer@trivlistdepth=\count308
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetitle
-.sty)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasesecti
-on.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbasetitle.sty)
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbasesection.sty
 \c@lecture=\count309
 \c@part=\count310
 \c@section=\count311
 \c@subsection=\count312
 \c@subsubsection=\count313
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseframe
-.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbaseframe.sty
 \beamer@framebox=\box66
 \beamer@frametitlebox=\box67
 \beamer@zoombox=\box68
 \beamer@zoomcount=\count314
 \beamer@zoomframecount=\count315
-\beamer@frametextheight=\dimen271
+\beamer@frametextheight=\dimen269
 \c@subsectionslide=\count316
-\beamer@frametopskip=\skip52
-\beamer@framebottomskip=\skip53
-\beamer@frametopskipautobreak=\skip54
-\beamer@framebottomskipautobreak=\skip55
+\beamer@frametopskip=\skip51
+\beamer@framebottomskip=\skip52
+\beamer@frametopskipautobreak=\skip53
+\beamer@framebottomskipautobreak=\skip54
 \beamer@envbody=\toks29
-\framewidth=\dimen272
+\framewidth=\dimen270
 \c@framenumber=\count317
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseverba
-tim.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbaseverbatim.sty
 \beamer@verbatimfileout=\write4
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseframe
-size.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbaseframesize.sty
 \beamer@splitbox=\box69
 \beamer@autobreakcount=\count318
-\beamer@autobreaklastheight=\dimen273
+\beamer@autobreaklastheight=\dimen271
 \beamer@frametitletoks=\toks30
 \beamer@framesubtitletoks=\toks31
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseframe
-components.sty
-\beamer@footins=\box70
-)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasecolor
-.sty)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasenotes
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbaseframecomponents
 .sty
+\beamer@footins=\box70
+) (/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbasecolor.sty) (/
+home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbasenotes.sty
 \beamer@frameboxcopy=\box71
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetoc.s
-ty)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetempl
-ates.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbasetoc.sty)
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbasetemplates.sty
 \beamer@sbttoks=\toks32
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseauxte
-mplates.sty
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseboxes
-.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbaseauxtemplates.st
+y (/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbaseboxes.sty
 \bmb@box=\box72
 \bmb@colorbox=\box73
-\bmb@boxwidth=\dimen274
-\bmb@boxheight=\dimen275
-\bmb@prevheight=\dimen276
-\bmb@temp=\dimen277
-\bmb@dima=\dimen278
-\bmb@dimb=\dimen279
-\bmb@prevheight=\dimen280
+\bmb@boxwidth=\dimen272
+\bmb@boxheight=\dimen273
+\bmb@prevheight=\dimen274
+\bmb@temp=\dimen275
+\bmb@dima=\dimen276
+\bmb@dimb=\dimen277
+\bmb@prevheight=\dimen278
 )
-\beamer@blockheadheight=\dimen281
+\beamer@blockheadheight=\dimen279
 ))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaselocal
-structure.sty
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/tools\enumerate.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbaselocalstructure.
+sty (/home/jerome/.miktex/texmfs/install/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks33
 )
-\beamer@bibiconwidth=\skip56
+\beamer@bibiconwidth=\skip55
 \c@figure=\count319
 \c@table=\count320
-\abovecaptionskip=\skip57
-\belowcaptionskip=\skip58
+\abovecaptionskip=\skip56
+\belowcaptionskip=\skip57
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasenavig
-ation.sty
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasenavig
-ationsymbols.tex)
-\beamer@section@min@dim=\dimen282
-)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetheor
-ems.sty
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbasenavigation.sty
+\beamer@section@min@dim=\dimen280
+) (/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbasetheorems.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
-\@mathmargin=\skip59
+\@mathmargin=\skip58
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks34
-\ex@=\dimen283
+\ex@=\dimen281
 ))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen284
+\pmbraise@=\dimen282
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count321
@@ -718,7 +660,7 @@ LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen285
+\big@size=\dimen283
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \macc@depth=\count326
@@ -736,112 +678,109 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \column@=\count331
 \maxfields@=\count332
 \andhelp@=\toks36
-\eqnshift@=\dimen286
-\alignsep@=\dimen287
-\tagshift@=\dimen288
-\tagwidth@=\dimen289
-\totwidth@=\dimen290
-\lineht@=\dimen291
+\eqnshift@=\dimen284
+\alignsep@=\dimen285
+\tagshift@=\dimen286
+\tagwidth@=\dimen287
+\totwidth@=\dimen288
+\lineht@=\dimen289
 \@envbody=\toks37
-\multlinegap=\skip60
-\multlinetaggap=\skip61
+\multlinegap=\skip59
+\multlinetaggap=\skip60
 \mathdisplay@stack=\toks38
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks39
 \thm@bodyfont=\toks40
 \thm@headfont=\toks41
 \thm@notefont=\toks42
 \thm@headpunct=\toks43
-\thm@preskip=\skip62
-\thm@postskip=\skip63
-\thm@headsep=\skip64
+\thm@preskip=\skip61
+\thm@postskip=\skip62
+\thm@headsep=\skip63
 \dth@everypar=\toks44
 )
 \c@theorem=\count333
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetheme
-s.sty))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerthemedefa
-ult.sty
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerfonttheme
-default.sty)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthem
-edefault.sty)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerinnerthem
-edefault.sty
-\beamer@dima=\dimen292
-\beamer@dimb=\dimen293
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerbasethemes.sty))
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerthemedefault.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerfontthemedefault.st
+y)
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamercolorthemedefault.s
+ty)
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerinnerthemedefault.s
+ty
+\beamer@dima=\dimen290
+\beamer@dimb=\dimen291
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerouterthem
-edefault.sty)))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/framed\framed.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/beamer/beamerouterthemedefault.s
+ty))) (/home/jerome/.miktex/texmfs/install/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip65
-\fb@frw=\dimen294
-\fb@frh=\dimen295
-\FrameRule=\dimen296
-\FrameSep=\dimen297
+\OuterFrameSep=\skip64
+\fb@frw=\dimen292
+\fb@frh=\dimen293
+\FrameRule=\dimen294
+\FrameSep=\dimen295
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/base\alltt.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/base/alltt.sty
 Package: alltt 2021/01/29 v2.0g defines alltt environment
 )
-(beamerthemebiostat.sty
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz
-.sty
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
-Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/OneDrive/BiogenIntern/multicollinearity_presentation/presentation
+/beamerthemebiostat.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/pgf/frontendlayer/tikz.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgf.sty
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
-eshapes.code.tex
-File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleshapes.co
+de.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfnodeparttextbox=\box76
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
-eplot.code.tex
-File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleplot.code
+.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfc
-omp-version-0-65.sty
-Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen298
-\pgf@nodesepend=\dimen299
+(/home/jerome/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-versio
+n-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen296
+\pgf@nodesepend=\dimen297
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfc
-omp-version-1-18.sty
-Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-versio
+n-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
 ))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.s
-ty
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor
-.code.tex
-Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen300
-\pgffor@skip=\dimen301
+(/home/jerome/.miktex/texmfs/install/tex/latex/pgf/utilities/pgffor.sty
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen298
+\pgffor@skip=\dimen299
 \pgffor@stack=\toks45
 \pgffor@toks=\toks46
 ))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
-kz\tikz.code.tex
-Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/tikz.co
+de.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflib
-raryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryplotha
+ndlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@plot@mark@count=\count334
-\pgfplotmarksize=\dimen302
+\pgfplotmarksize=\dimen300
 )
-\tikz@lastx=\dimen303
-\tikz@lasty=\dimen304
-\tikz@lastxsaved=\dimen305
-\tikz@lastysaved=\dimen306
-\tikz@lastmovetox=\dimen307
-\tikz@lastmovetoy=\dimen308
-\tikzleveldistance=\dimen309
-\tikzsiblingdistance=\dimen310
+\tikz@lastx=\dimen301
+\tikz@lasty=\dimen302
+\tikz@lastxsaved=\dimen303
+\tikz@lastysaved=\dimen304
+\tikz@lastmovetox=\dimen305
+\tikz@lastmovetoy=\dimen306
+\tikzleveldistance=\dimen307
+\tikzsiblingdistance=\dimen308
 \tikz@figbox=\box77
 \tikz@figbox@bg=\box78
 \tikz@tempbox=\box79
@@ -851,66 +790,66 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikznumberofcurrentchild=\count337
 \tikz@fig@count=\count338
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
-ematrix.code.tex
-File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmodulematrix.co
+de.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfmatrixcurrentrow=\count339
 \pgfmatrixcurrentcolumn=\count340
 \pgf@matrix@numberofcolumns=\count341
 )
 \tikz@expandcount=\count342
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
-kz/libraries\tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
-kz/libraries\tikzlibraryshapes.code.tex
-File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
-kz/libraries\tikzlibraryshapes.geometric.code.tex
-File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes
-\pgflibraryshapes.geometric.code.tex
-File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/libraries/shapes/pgflibrar
+yshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
-kz/libraries\tikzlibraryshapes.misc.code.tex
-File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes
-\pgflibraryshapes.misc.code.tex
-File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/libraries/shapes/pgflibrar
+yshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
-kz/libraries\tikzlibraryshapes.symbols.code.tex
-File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes
-\pgflibraryshapes.symbols.code.tex
-File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/libraries/shapes/pgflibrar
+yshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
-kz/libraries\tikzlibraryshapes.arrows.code.tex
-File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes
-\pgflibraryshapes.arrows.code.tex
-File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/libraries/shapes/pgflibrar
+yshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
-kz/libraries\tikzlibraryshapes.callouts.code.tex
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes
-\pgflibraryshapes.callouts.code.tex))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
-kz/libraries\tikzlibraryshapes.multipart.code.tex
-File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibraryshapes.callouts.code.tex
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/libraries/shapes/pgflibrar
+yshapes.callouts.code.tex))
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes
-\pgflibraryshapes.multipart.code.tex
-File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/libraries/shapes/pgflibrar
+yshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfnodepartlowerbox=\box81
 \pgfnodeparttwobox=\box82
 \pgfnodepartthreebox=\box83
@@ -932,72 +871,72 @@ File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfnodepartsixbox=\box99
 \pgfnodepartfivebox=\box100
 )))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
-kz/libraries\tikzlibraryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflib
-raryarrows.code.tex
-File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\arrowsize=\dimen311
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryarrows
+.code.tex
+File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\arrowsize=\dimen309
 ))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflib
-raryarrows.meta.code.tex
-File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen312
-\pgfarrowlength=\dimen313
-\pgfarrowwidth=\dimen314
-\pgfarrowlinewidth=\dimen315
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryarrows
+.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowinset=\dimen310
+\pgfarrowlength=\dimen311
+\pgfarrowwidth=\dimen312
+\pgfarrowlinewidth=\dimen313
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
-kz/libraries\tikzlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
-kz/libraries\tikzlibraryfit.code.tex
-File: tikzlibraryfit.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
-kz/libraries\tikzlibrarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(/home/jerome/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box101
 \sift@deathcycles=\count343
-\@vwid@loff=\dimen316
-\@vwid@roff=\dimen317
-) (C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+\@vwid@loff=\dimen314
+\@vwid@roff=\dimen315
+)
+(/home/jerome/.miktex/texmfs/install/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks47
 \inpenc@posthook=\toks48
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/base\latin9.def
+(/home/jerome/.miktex/texmfs/install/tex/latex/base/latin9.def
 File: latin9.def 2021/02/14 v1.3d Input encoding file
 ))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2023/03/28 3.87 The Babel package
+(/home/jerome/.miktex/texmfs/install/tex/generic/babel/babel.sty
+Package: babel 2022/07/20 3.78 The Babel package
 \babel@savecnt=\count344
-\U@D=\dimen318
+\U@D=\dimen316
 \l@unhyphenated=\language79
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+(/home/jerome/.miktex/texmfs/install/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read3
-LaTeX Info: Redefining \textlatin on input line 4095.
+LaTeX Info: Redefining \textlatin on input line 4078.
 \bbl@dirlevel=\count345
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+(/home/jerome/.miktex/texmfs/install/tex/latex/arabi/bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.
-ldf
+(/home/jerome/.miktex/texmfs/install/tex/latex/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
@@ -1006,26 +945,25 @@ Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 (babel)             (\language73). Reported on input line 108.
 ))
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babe
-l-english.tex
+(/home/jerome/.miktex/texmfs/install/tex/generic/babel/locale/en/babel-english.
+tex
 Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 11.
-)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfpages
-.sty
+) (/home/jerome/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfpages.sty
 Package: pgfpages 2011/01/05 ver 0.02
- (C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+
+(/home/jerome/.miktex/texmfs/install/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count346
 \calc@Bcount=\count347
-\calc@Adimen=\dimen319
-\calc@Bdimen=\dimen320
-\calc@Askip=\skip66
-\calc@Bskip=\skip67
+\calc@Adimen=\dimen317
+\calc@Bdimen=\dimen318
+\calc@Askip=\skip65
+\calc@Bskip=\skip66
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count348
-\calc@Cskip=\skip68
+\calc@Cskip=\skip67
 )
 \pgf@logicalpages=\count349
 \pgf@firstshipout=\count350
@@ -1033,30 +971,30 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \pgf@currentshipout=\count352
 \pgf@cpn=\count353
 \pgf@shipoutnextto=\count354
-\pgfphysicalheight=\dimen321
-\pgfphysicalwidth=\dimen322
+\pgfphysicalheight=\dimen319
+\pgfphysicalwidth=\dimen320
 \pgfpages@shipoutbox=\box102
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
-Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
+(/home/jerome/.miktex/texmfs/install/tex/latex/tools/verbatim.sty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks49
 \verbatim@line=\toks50
 \verbatim@in@stream=\read4
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\wasysym.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/wasysym/wasysym.sty
 Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
 \symwasy=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 (Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/tools/longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
-\LTleft=\skip69
-\LTright=\skip70
-\LTpre=\skip71
-\LTpost=\skip72
+\LTleft=\skip68
+\LTright=\skip69
+\LTpre=\skip70
+\LTpost=\skip71
 \LTchunksize=\count355
-\LTcapwidth=\dimen323
+\LTcapwidth=\dimen321
 \LT@head=\box103
 \LT@firsthead=\box104
 \LT@foot=\box105
@@ -1068,7 +1006,7 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \c@LT@chunks=\count359
 \LT@p@ftn=\toks51
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count360
 \float@exts=\toks52
@@ -1076,30 +1014,31 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks53
 \@floatcapt=\box109
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip73
-\bibsep=\skip74
+\bibhang=\skip72
+\bibsep=\skip73
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count361
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 49.
-\frameheightmhead=\skip75
-\frameheightohead=\skip76
+\frameheightmhead=\skip74
+\frameheightohead=\skip75
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/upquote\upquote.sty
+(/home/jerome/.miktex/texmfs/install/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
-ftex.def
-File: l3backend-pdftex.def 2023-03-30 L3 backend support: PDF output (pdfTeX)
+(/home/jerome/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-07-01 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count362
 \l__pdf_internal_box=\box110
-) (present_withR.aux)
+)
+(/home/jerome/OneDrive/BiogenIntern/multicollinearity_presentation/presentation
+/present_withR.aux)
 \openout1 = `present_withR.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
@@ -1155,34 +1094,32 @@ LaTeX Font Info:    ... okay on input line 75.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
-kii
+(/home/jerome/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count363
-\scratchdimen=\dimen324
+\scratchdimen=\dimen322
 \scratchbox=\box111
 \nofMPsegments=\count364
 \nofMParguments=\count365
 \everyMPshowfont=\toks54
 \MPscratchCnt=\count366
-\MPscratchDim=\dimen325
+\MPscratchDim=\dimen323
 \MPnumerator=\count367
 \makeMPintoPDFobject=\count368
 \everyMPtoPDFconversion=\toks55
-)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
-base.sty
+) (/home/jerome/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.
-cfg
+(/home/jerome/.miktex/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring ON on input line 75.
- (present_withR.out) (present_withR.out)
+
+(/home/jerome/OneDrive/BiogenIntern/multicollinearity_presentation/presentation
+/present_withR.out)
+(/home/jerome/OneDrive/BiogenIntern/multicollinearity_presentation/presentation
+/present_withR.out)
 \@outlinefile=\write5
 \openout5 = `present_withR.out'.
 
@@ -1244,30 +1181,32 @@ LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
 ut line 75.
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-
-basic-dictionary-English.dict
+(/home/jerome/.miktex/texmfs/install/tex/latex/translator/translator-basic-dict
+ionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-
-bibliography-dictionary-English.dict
+(/home/jerome/.miktex/texmfs/install/tex/latex/translator/translator-bibliograp
+hy-dictionary-English.dict
 Dictionary: translator-bibliography-dictionary, Language: English 
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-
-environment-dictionary-English.dict
+(/home/jerome/.miktex/texmfs/install/tex/latex/translator/translator-environmen
+t-dictionary-English.dict
 Dictionary: translator-environment-dictionary, Language: English 
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-
-months-dictionary-English.dict
+(/home/jerome/.miktex/texmfs/install/tex/latex/translator/translator-months-dic
+tionary-English.dict
 Dictionary: translator-months-dictionary, Language: English 
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-
-numbers-dictionary-English.dict
+(/home/jerome/.miktex/texmfs/install/tex/latex/translator/translator-numbers-di
+ctionary-English.dict
 Dictionary: translator-numbers-dictionary, Language: English 
 )
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-
-theorem-dictionary-English.dict
+(/home/jerome/.miktex/texmfs/install/tex/latex/translator/translator-theorem-di
+ctionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (present_withR.nav)
+)
+(/home/jerome/OneDrive/BiogenIntern/multicollinearity_presentation/presentation
+/present_withR.nav)
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <20> not available
 (Font)              size <20.74> substituted on input line 76.
@@ -1276,32 +1215,32 @@ LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <20> not available
 LaTeX Font Warning: Font shape `T1/cmss/bx/n' in size <20> not available
 (Font)              size <20.74> substituted on input line 76.
 
-[1{C:/Users/jsepin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+[1{/home/jerome/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map}
 
- <./uzh_logo_e_pos.pdf>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 89.
+ </home/jerome/OneDrive/BiogenIntern/multicollinearity_presentation/presentatio
+n/uzh_logo_e_pos.pdf>]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 92.
 
-
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+ (/home/jerome/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 89.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 92.
 
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+(/home/jerome/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 89
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 92
 .
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\uwasy.fd
+(/home/jerome/.miktex/texmfs/install/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 89.
+ut line 92.
 
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/sansmathaccent\ot1math
-kerncmss.fd
+(/home/jerome/.miktex/texmfs/install/tex/latex/sansmathaccent/ot1mathkerncmss.f
+d
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 ) [2
@@ -1309,51 +1248,67 @@ thkerncmss.
 ] [3
 
 ]
-Overfull \hbox (5.7626pt too wide) in paragraph at lines 142--142
- [][]$[][]$ 
- []
+<figures/figcollinearitydata-1.pdf, id=56, 722.7pt x 289.08pt>
+File: figures/figcollinearitydata-1.pdf Graphic file (type pdf)
+<use figures/figcollinearitydata-1.pdf>
+Package pdftex.def Info: figures/figcollinearitydata-1.pdf  used on input line 
+125.
+(pdftex.def)             Requested size: 293.06349pt x 117.22673pt.
 
-
-Overfull \hbox (4.25151pt too wide) in paragraph at lines 142--142
- [][]$[][]$ 
+Overfull \vbox (4.32428pt too high) detected at line 125
  []
 
 [4
 
+ </home/jerome/OneDrive/BiogenIntern/multicollinearity_presentation/presentatio
+n/figures/figcollinearitydata-1.pdf>] [5
+
 ]
-Overfull \hbox (4.62387pt too wide) in paragraph at lines 154--154
-[][][][][][]\T1/cmss/m/it/9 " 
+<figures/figresults-1.pdf, id=75, 794.97pt x 578.16pt>
+File: figures/figresults-1.pdf Graphic file (type pdf)
+<use figures/figresults-1.pdf>
+Package pdftex.def Info: figures/figresults-1.pdf  used on input line 173.
+(pdftex.def)             Requested size: 293.06349pt x 213.13951pt.
+ [6
+
+ </home/jerome/OneDrive/BiogenIntern/multicollinearity_presentation/presentatio
+n/figures/figresults-1.pdf>]
+Overfull \hbox (5.7626pt too wide) in paragraph at lines 216--216
+ [][]$[][]$ 
  []
 
-[5
 
-] [6
-
-]
-<figures/figcollinearitydata-1.pdf, id=77, 722.7pt x 433.62pt>
-File: figures/figcollinearitydata-1.pdf Graphic file (type pdf)
-<use figures/figcollinearitydata-1.pdf>
-Package pdftex.def Info: figures/figcollinearitydata-1.pdf  used on input line 
-186.
-(pdftex.def)             Requested size: 293.06349pt x 175.8401pt.
-
-Overfull \vbox (6.59866pt too high) detected at line 186
+Overfull \hbox (4.25151pt too wide) in paragraph at lines 216--216
+ [][]$[][]$ 
  []
 
 [7
 
- <./figures/figcollinearitydata-1.pdf>]
-<figures/figresults-1.pdf, id=91, 722.7pt x 433.62pt>
-File: figures/figresults-1.pdf Graphic file (type pdf)
-<use figures/figresults-1.pdf>
-Package pdftex.def Info: figures/figresults-1.pdf  used on input line 201.
-(pdftex.def)             Requested size: 293.06349pt x 175.8401pt.
- [8
+] [8
 
- <./figures/figresults-1.pdf>]
+]
+Overfull \hbox (4.62387pt too wide) in paragraph at lines 235--235
+[][][][][][]\T1/cmss/m/it/9 " 
+ []
+
 [9
 
-] (present_withR.bbl) [10
+] [10
+
+]
+<appenzeller.png, id=113, 858.20625pt x 407.5225pt>
+File: appenzeller.png Graphic file (type png)
+<use appenzeller.png>
+Package pdftex.def Info: appenzeller.png  used on input line 272.
+(pdftex.def)             Requested size: 263.75534pt x 125.24246pt.
+ [11
+
+ </home/jerome/OneDrive/BiogenIntern/multicollinearity_presentation/presentatio
+n/appenzeller.png>] [12
+
+]
+(/home/jerome/OneDrive/BiogenIntern/multicollinearity_presentation/presentation
+/present_withR.bbl) [13
 
 ]
 \tf@nav=\write6
@@ -1365,7 +1320,9 @@ Package pdftex.def Info: figures/figresults-1.pdf  used on input line 201.
 \tf@snm=\write8
 \openout8 = `present_withR.snm'.
 
- (present_withR.aux)
+
+(/home/jerome/OneDrive/BiogenIntern/multicollinearity_presentation/presentation
+/present_withR.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.74pt have occurred.
@@ -1374,39 +1331,36 @@ Package rerunfilecheck Info: File `present_withR.out' has not changed.
 (rerunfilecheck)             Checksum: AEA4B6A8AE45636C75679C2F0DFA4493;93.
  ) 
 Here is how much of TeX's memory you used:
- 30133 strings out of 476326
- 626815 string characters out of 5787250
- 1861660 words of memory out of 5000000
- 49891 multiletter control sequences out of 15000+600000
- 539877 words of font info for 98 fonts, out of 8000000 for 9000
+ 30124 strings out of 478338
+ 621918 string characters out of 2840951
+ 912604 words of memory out of 3000000
+ 47862 multiletter control sequences out of 15000+600000
+ 496849 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 130i,14n,122p,1038b,860s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\jsepin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecs
-i1000.pk> <C:\Users\jsepin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
-600\ecsi0900.pk> <C:\Users\jsepin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
-/ec/dpi600\ecsi0600.pk> <C:\Users\jsepin\AppData\Local\MiKTeX\fonts/pk/ljfour/j
-knappen/ec/dpi600\ecss1000.pk> <C:\Users\jsepin\AppData\Local\MiKTeX\fonts/pk/l
-jfour/jknappen/ec/dpi600\ecss0600.pk> <C:\Users\jsepin\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecss0800.pk> <C:\Users\jsepin\AppData\Local\MiK
-TeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsi1095.pk> <C:\Users\jsepin\AppData\Lo
-cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1095.pk> <C:\Users\jsepin\App
-Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1200.pk> <C:\Users\jse
-pin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0500.pk> <C:\Us
-ers\jsepin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0900.pk>
- <C:\Users\jsepin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx2
-074.pk> <C:\Users\jsepin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecsx0700.pk><C:/Users/jsepin/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmmi10.pfb><C:/Users/jsepin/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmmi6.pfb><C:/Users/jsepin/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/jsepin/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/jsepin/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/jsepin
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Us
-ers/jsepin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb>
-Output written on present_withR.pdf (10 pages, 852489 bytes).
+ 130i,14n,122p,1051b,853s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ </home/jerome/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecsi100
+0.pk> </home/jerome/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecsi
+0900.pk> </home/jerome/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/e
+csi0600.pk> </home/jerome/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi60
+0/ecss1000.pk> </home/jerome/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dp
+i600/ecss0600.pk> </home/jerome/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec
+/dpi600/ecss0800.pk> </home/jerome/.miktex/texmfs/data/fonts/pk/ljfour/jknappen
+/ec/dpi600/ecsi1095.pk> </home/jerome/.miktex/texmfs/data/fonts/pk/ljfour/jknap
+pen/ec/dpi600/ecss1095.pk> </home/jerome/.miktex/texmfs/data/fonts/pk/ljfour/jk
+nappen/ec/dpi600/ecsx1200.pk> </home/jerome/.miktex/texmfs/data/fonts/pk/ljfour
+/jknappen/ec/dpi600/ecss0500.pk> </home/jerome/.miktex/texmfs/data/fonts/pk/ljf
+our/jknappen/ec/dpi600/ecss0900.pk> </home/jerome/.miktex/texmfs/data/fonts/pk/
+ljfour/jknappen/ec/dpi600/ecsx2074.pk> </home/jerome/.miktex/texmfs/data/fonts/
+pk/ljfour/jknappen/ec/dpi600/ecsx0700.pk></home/jerome/.miktex/texmfs/install/f
+onts/type1/public/amsfonts/cm/cmmi10.pfb></home/jerome/.miktex/texmfs/install/f
+onts/type1/public/amsfonts/cm/cmmi8.pfb></home/jerome/.miktex/texmfs/install/fo
+nts/type1/public/amsfonts/cm/cmss10.pfb></home/jerome/.miktex/texmfs/install/fo
+nts/type1/public/amsfonts/cm/cmssi10.pfb></home/jerome/.miktex/texmfs/install/f
+onts/type1/public/amsfonts/cm/cmssi8.pfb></home/jerome/.miktex/texmfs/install/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on present_withR.pdf (13 pages, 1946512 bytes).
 PDF statistics:
- 506 PDF objects out of 1000 (max. 8388607)
- 23 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 543 PDF objects out of 1000 (max. 8388607)
+ 29 named destinations out of 1000 (max. 500000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
