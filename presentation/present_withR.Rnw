@@ -1,0 +1,304 @@
+\documentclass[english]{beamer}
+
+%% The most common packages are already included in:
+\usetheme{biostat}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+%% Header data: (adjust to your needs:
+\def\uzhunit{Biostatistics}             %% if (not) needed comment/uncomment
+%\def\uzhunitext{STA480}
+
+\title[Multicollinearity]{Multicollinearity}
+%% Optional Argument in [Brackets]: Short Title for Footline
+
+%% The following are all optional, simply comment them
+%\subtitle{Subtitle (optional)}
+%\institute{Biostatistics Journal Club}  %% optional
+\author{Jerome Sepin}
+%\date{\today}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+<<include=FALSE,purl=FALSE>>=
+library(knitr)
+opts_chunk$set(
+fig.path='figures/fig', fig.show='hold', 
+	cache=TRUE, fig.height=4)
+@
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{document}
+\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%===================================================
+\begin{frame}{Why this presentation?}
+%===================================================
+From \cite{Schwabe2022}:
+
+\textit{
+"The primary pharmacokinetic parameters were log-transformed and analyzed using an analysis of covariance (ANCOVA) model that included treatment as a fixed effect, \colorbox{yellow}{baseline weight} category $\left(\geq 60-\leq 80kg/>80\text{kg}-\leq 100\text{kg}\right)$, \colorbox{yellow}{baseline BMI} (continuous variable), and study site as covariates." 
+}
+
+%===================================================
+\end{frame}
+\begin{frame}{What is the problem with this?}
+%===================================================
+
+$\text{BMI}=\frac{\text{weight (kg)}}{\text{height (m)}^2}$
+
+
+%===================================================
+\end{frame}
+\begin{frame}{Relation of variables}
+%===================================================
+
+\tikzstyle{block} = [draw=black, thick, text width=2cm, minimum height=1cm, align=center]
+\tikzstyle{cloud} = [draw=black, ellipse, text width=1cm, minimum height=1cm, align=center] 
+% \tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm,
+%     minimum height=2em]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+\begin{figure}[H]
+\centering
+\resizebox{8.5cm}{!}{%
+\begin{tikzpicture}
+		\node[cloud] (T) {T};
+    \node[cloud,below right=3cm and 3cm of T] (weight) {$\textit{weight}_0$};
+    \node[cloud, right=1.5cm of weight] (height) {$\textit{height}_0$};
+    \node[cloud, below right=1.5cm and 4.5cm of T] (BMI) {$\textit{BMI}_0$};
+		\node[cloud, right=9cm of T] (Y) {$Y$};
+
+    % edges
+    \draw[red] (T) -- (Y);
+    \draw[line width=1.5mm ] (weight) -- (BMI);
+    \draw[line width=1.5mm ] (height) -- (BMI);
+    \draw (height) -- (weight);
+    \draw (height) -- (Y);
+    \draw (BMI) -- (Y);
+    \draw (weight) to [bend right=80] (Y);
+    \draw[gray!10] (BMI) -- (T);
+    \draw[gray!10] (weight) -- (T);
+    \draw[gray!10] (height) to [bend left=80] (T);
+
+\end{tikzpicture}
+}
+\vspace*{-1.5cm}
+\caption{Successful randomization removes confounding}
+\end{figure}
+\vspace*{-0.8cm}
+\begin{center}
+$\boxed{\text{BMI}=\frac{\text{weight (kg)}}{\text{height (m)}^2}}$
+\end{center}
+
+
+
+%===================================================
+\end{frame}
+\begin{frame}[plain]{But it may not be successful\dots}
+%===================================================
+ICH E9:
+\textit{
+\tiny{
+"In multicentre trials (see Glossary) the randomisation procedures should be organised centrally. It is advisable to have a separate random scheme for each centre, i.e. to stratify by centre or to allocate several whole blocks to each centre. More generally, stratification by important prognostic factors measured at baseline (e.g. severity of disease, age, sex, etc.) may sometimes be valuable in order to promote balanced allocation within strata; this has greater potential benefit in small trials. The use of more than two or three stratification factors is rarely necessary, is less successful at achieving balance and is logistically troublesome. The use of a dynamic allocation procedure (see below) may help to achieve balance across a number of stratification factors simultaneously provided the rest of the trial procedures can be adjusted to accommodate an approach of this type.}\footnotesize{
+\cbox{Factors on which randomisation has been stratified should be accounted for later in the analysis.}"
+}
+}
+
+%===================================================
+\end{frame}
+\begin{frame}{Relation of variables}
+%===================================================
+\begin{enumerate}
+\item paper: $AUC\sim trt + weight_{cat.} + BMI_{cont.}\textcolor{gray}{+ site}$
+
+$AUC\sim trt + weight_{cat.} + \frac{weight_{cont.}}{height_{cont.}^2}\textcolor{gray}{+ site}$
+\item a1: $AUC\sim trt + weight_{cat.} + height_{cont.}\textcolor{gray}{+ site}$
+\item a2: $AUC\sim trt + weight_{cont.} + height_{cont.}\textcolor{gray}{+ site}$
+\end{enumerate}
+
+Let's see what happens when the correlation between $height$ and $weight$ changes!
+
+
+<<echo=F,eval = T, message=F>>=
+library(mvtnorm);library(tidyverse)
+n <- round(685 * 2/3,0)
+bmi_m <- 24.5
+bmi_sd <- 2.6
+weight_m <- 73.5
+weight_sd <- 9.4
+beta <- c(5,5,2,2)
+
+sigma <- 2
+rho <- 0.5
+
+dgp <- function(rho,n,sigma,beta, bmi_m, bmi_sd, weight_m, weight_sd,show_data = FALSE){
+
+	# generate baseline covariates
+	X <- data.frame(mvtnorm::rmvnorm(n=n,
+												mean = c(bmi_m,weight_m),
+												sigma = matrix(c(bmi_sd^2,rho*bmi_sd*weight_sd,
+																				 rho*bmi_sd*weight_sd,weight_sd^2),nrow = 2, byrow = T)
+												))
+	
+	eps_y <- rnorm(n = n, mean = 0, sd = sigma)
+	
+	
+	colnames(X) <- c("bmi", "weight")
+	
+	# recover height
+	X$height <- sqrt(X$weight/X$bmi)
+	
+	# categorical weight
+	X$weight_cat <- ifelse(X$weight > 80, ">80kg", "<=80" )
+	
+	# treatment randomization 1:1:1 within categorical weight
+	rand <- lapply(unique(X$weight_cat), function(x){
+		S_ind <- which(X$weight_cat==x)
+		Trt <- rep_len(c(0:1), length.out=length(S_ind))
+		return(cbind(S_ind,Trt))
+	})
+	rand <- data.frame(do.call("rbind", rand))
+	X$Trt <- rand$Trt[order(rand$S_ind)]
+	
+	#table(X$weight_cat,X$Trt)
+	
+	# outcome
+	#X$Y_log <- cbind(1,X$Trt,X$bmi, ifelse(X$weight_cat=="<=80",0,1)) %*% beta +eps_y
+	#X$Y_log <- cbind(1,X$Trt,X$bmi, X$weight) %*% beta + eps_y
+	X$Y_log <- cbind(1,X$Trt,X$height, X$weight) %*% beta + eps_y
+	
+	
+	#modelling
+	m <- lm(data = X, Y_log~Trt + bmi + weight_cat)
+	#m <- lm(data = X, Y_log~Trt + bmi + weight)
+	s <- data.frame(coef(summary(m)))
+	s$variable <- row.names(s)
+	s$model <- "paper"
+
+	m <- lm(data = X, Y_log~Trt + height + weight_cat)
+	#m <- lm(data = X, Y_log~Trt + height + weight)
+	s2 <- data.frame(coef(summary(m)))
+	s2$variable <- row.names(s2)
+	s2$model <- "a1"
+	
+	m <- lm(data = X, Y_log~Trt + height + weight)
+	s3 <- data.frame(coef(summary(m)))
+	s3$variable <- row.names(s3)
+	s3$model <- "a2"
+	
+	
+	s <- rbind(s,s2,s3)
+	
+	
+	s$rho <- rho
+	s$rho_sim <- cor(X$bmi, X$weight)
+	
+	
+	#give back
+	if(show_data){
+		return(X)
+	}else{
+		return(s)
+	}
+}
+
+set.seed(324324)
+
+rho <- rep(seq(from = 0.5, to =0.99, length.out = 100),8)
+
+res <- lapply(rho, function(x){
+	dgp(rho=x,n = 100,sigma = sigma,beta=beta,bmi_m=bmi_m, bmi_sd = bmi_sd, weight_m = weight_m, weight_sd = weight_sd)
+})
+res <- do.call("rbind", res)
+row.names(res) <-NULL
+
+res$lower <- res$Estimate - qnorm(p = 0.95)*res$Std..Error
+res$upper <- res$Estimate + qnorm(p = 0.95)*res$Std..Error
+
+# add true values
+res <- left_join(res, data.frame("variable"=c("(Intercept)", "Trt", "height", "weight"),"true"=beta))
+@
+
+%===================================================
+\end{frame}
+\begin{frame}{Relation of variables}
+%===================================================
+
+\begin{figure}[h]%H is strict!
+\begin{center}
+<<collinearitydata, fig.height = 6, fig.width = 10,echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE,dev='pdf'>>=
+# dev.off()
+# dev.new()
+set.seed(324324)
+d1 <- dgp(rho=min(rho),n = 100,sigma = sigma,beta=beta,bmi_m=bmi_m, bmi_sd = bmi_sd, weight_m = weight_m, weight_sd = weight_sd, show_data = TRUE)
+par(mar  = c(5,5,2,4) ,mfrow = c(1,2))
+plot(d1$weight, d1$height,pch = 19,xlab = "weight [kg]", ylab = "height [m]", main = "Low correlation")
+abline(v = 80)
+par(new = T, mar  =  c(5,5,2,4) )
+plot(d1$weight, d1$bmi,col = "blue",pch = 19,xaxt = "n", xlab = "",ylab = "", yaxt = "n")
+mtext("BMI",side=4,col="blue",line=4) 
+axis(4, ylim=c(0,7000), col="blue",col.axis="blue",las=1)
+
+
+d1 <- dgp(rho=max(rho),n = 100,sigma = sigma,beta=beta,bmi_m=bmi_m, bmi_sd = bmi_sd, weight_m = weight_m, weight_sd = weight_sd, show_data = TRUE)
+par(mar  =c(5,5,2,5) )
+plot(d1$weight, d1$height,pch = 19,xlab = "weight [kg]", ylab = "height [m]", main = "High correlation")
+abline(v = 80)
+par(new = T, mar  = c(5,5,2,5) )
+plot(d1$weight, d1$bmi,col = "blue",pch = 19,xaxt = "n", xlab = "",ylab = "", yaxt = "n")
+mtext("BMI",side=4,col="blue",line=4) 
+axis(4, ylim=c(0,7000), col="blue",col.axis="blue",las=1)
+
+@
+\end{center}
+\end{figure}
+
+
+%===================================================
+\end{frame}
+\begin{frame}[plain]{Results}
+%===================================================
+
+\begin{figure}[h]%H is strict!
+\begin{center}
+<<results, fig.height = 6, fig.width = 10,echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE,dev='pdf'>>=
+res %>%
+	filter(variable != "(Intercept)")%>%
+	ggplot(aes(x=rho_sim,y =Estimate,col = model ))+
+	geom_point()+
+	geom_errorbar(aes(ymin = lower, ymax = upper), width = 0.05)+
+	geom_hline(aes(yintercept = true), col = "black" )+
+	facet_wrap(variable~., scales = "free")
+@
+\end{center}
+\end{figure}
+
+
+%===================================================
+\end{frame}
+\begin{frame}{Conclusion}
+%===================================================
+
+\begin{itemize}
+\item Collinearity increases uncertainty (only the variables that are included)
+\item The closer we model "nature", the lower our residual standard error -> more power! (avoid dichotomization)
+\item A bit more sophisticated randomization may not hurt \dots\end{itemize}
+
+
+%===================================================
+\end{frame}
+\begin{frame}{References}
+%===================================================
+  \small
+  \bibliographystyle{apalike}
+\bibliography{illustration}
+
+\end{frame}
+
+%\appendix
+%% Possible backup slides...
+
+%% chapter division is accomplished with:
+%% \part{Appendix}
+
+\end{document}
