@@ -56,7 +56,7 @@ $\boxed{\log(y)\sim trt + weight_{cat.} + \frac{weight_{cont.}}{height^2_{cont.}
 
 Thus, $weight$ and $BMI$ may be highly correlated (a special case of collinearity)!
 
-<<echo=F,eval = T, message=F>>=
+<<simdata, echo=F,eval = T, message=F>>=
 library(mvtnorm);library(tidyverse)
 n <- round(685 * 2/3,0)
 # bmi_m <- 24.5
@@ -148,8 +148,13 @@ dgp <- function(rho,n,sigma,beta, bmi_m, bmi_sd, weight_m, weight_sd,show_data =
 	s7$variable <- row.names(s7)
 	s7$model <- "m7:bmi+height+weight"
 	
+	m <- lm(data = X, Y_log~Trt)
+	s8 <- data.frame(coef(summary(m)))
+	s8$variable <- row.names(s8)
+	s8$model <- "m8:"
 	
-	s <- rbind(s,s2,s3,s4,s5,s6,s7)
+	
+	s <- rbind(s,s2,s3,s4,s5,s6,s7,s8)
 	
 	
 	s$rho <- rho
@@ -166,7 +171,9 @@ dgp <- function(rho,n,sigma,beta, bmi_m, bmi_sd, weight_m, weight_sd,show_data =
 
 set.seed(324324)
 
-rho <- rep(seq(from = 0.7, to =0.999, length.out = 100),5)
+rho <- rep(seq(from = 0.8, to =0.9999, length.out = 100),5)
+#rho <- rep(seq(from = 1, to = 5, length.out = 100),5)
+rho <- tanh(rep(seq(from = 1, to = 5, length.out = 50),5))
 
 res <- lapply(rho, function(x){
 	dgp(rho=x,n = 100,sigma = sigma,beta=beta,bmi_m=bmi_m, bmi_sd = bmi_sd, weight_m = weight_m, weight_sd = weight_sd)
@@ -268,15 +275,17 @@ res$variable <- factor(res$variable,levels=c("bmi","weight","height", "Trt"))
 
 res %>%
 	filter(variable != "(Intercept)")%>%
-	ggplot(aes(x=rho_sim,y =Estimate,col = model ))+
-	geom_point()+
-	geom_errorbar(aes(ymin = lower, ymax = upper), width = 0.05)+
-	geom_smooth(col = "black", se = F)+
+	ggplot(aes(x=rho_sim,y =Estimate,col = model ))+ #rho_sim
+	geom_errorbar(aes(ymin = lower, ymax = upper), width = 0.05,alpha = 0.5)+
+	geom_point(alpha = 0.5,col = "black")+
+	#geom_smooth(col = "black", se = F)+
 	geom_hline(aes(yintercept = true), col = "red" )+
-	facet_wrap(variable~model, scales = "free",
+	facet_wrap(variable~model, scales = "fixed",
 						 ncol = length(unique(res$model)))+
 	labs(x = "Correlation between weight and height",
-			 y = "Estimate and 90% Confidence Interval")
+			 y = "Estimate and 90% Confidence Interval")+
+	coord_cartesian(ylim = c(-15, 15)) 
+
 @
 \end{center}
 \end{figure}
@@ -331,6 +340,9 @@ $\boxed{\text{BMI}=\frac{\text{weight (kg)}}{\text{height (m)}^2}}$
 \centering
 \huge{\textbf{Domain knowledge?}}
 
+\normalsize
+\textcolor{red}{(Statistical) Model selection is a problem for a different day\dots}
+
 %===================================================
 \end{frame}
 \begin{frame}[plain]{But why this model?}
@@ -358,13 +370,13 @@ ICH E9:
 \begin{table}[]
 \centering
 %\resizebox{\textwidth}{!}{%
-\begin{tabular}{|l|l|l|l|}
+\begin{tabular}{|l|l|l|l|l|}
 \hline
-milk & water & ... & salt \\ 
+milk & water & ... & salt & total\\ 
 \hline
-40\% & 30\%  & ... & 1\%  \\ 
-45\% & 35\%  & ... & 2\%  \\
-\dots& \dots  & \dots & \dots  \\ \hline
+40\% & 30\%  & ... & 1\%  & 100\%\\ 
+45\% & 35\%  & ... & 2\%  & 100\%\\
+\dots& \dots  & \dots & \dots & 100\% \\ \hline
 \end{tabular}%
 %}
 \end{table}

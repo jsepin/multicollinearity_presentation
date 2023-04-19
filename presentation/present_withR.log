@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.7.30)  16 APR 2023 21:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.7.30)  19 APR 2023 09:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1287,7 +1287,7 @@ Overfull \hbox (4.25151pt too wide) in paragraph at lines 216--216
 ] [8
 
 ]
-Overfull \hbox (4.62387pt too wide) in paragraph at lines 235--235
+Overfull \hbox (4.62387pt too wide) in paragraph at lines 238--238
 [][][][][][]\T1/cmss/m/it/9 " 
  []
 
@@ -1296,10 +1296,10 @@ Overfull \hbox (4.62387pt too wide) in paragraph at lines 235--235
 ] [10
 
 ]
-<appenzeller.png, id=113, 858.20625pt x 407.5225pt>
+<appenzeller.png, id=117, 858.20625pt x 407.5225pt>
 File: appenzeller.png Graphic file (type png)
 <use appenzeller.png>
-Package pdftex.def Info: appenzeller.png  used on input line 272.
+Package pdftex.def Info: appenzeller.png  used on input line 275.
 (pdftex.def)             Requested size: 263.75534pt x 125.24246pt.
  [11
 
@@ -1358,9 +1358,9 @@ nts/type1/public/amsfonts/cm/cmss10.pfb></home/jerome/.miktex/texmfs/install/fo
 nts/type1/public/amsfonts/cm/cmssi10.pfb></home/jerome/.miktex/texmfs/install/f
 onts/type1/public/amsfonts/cm/cmssi8.pfb></home/jerome/.miktex/texmfs/install/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on present_withR.pdf (13 pages, 1946512 bytes).
+Output written on present_withR.pdf (13 pages, 1547793 bytes).
 PDF statistics:
- 543 PDF objects out of 1000 (max. 8388607)
+ 547 PDF objects out of 1000 (max. 8388607)
  29 named destinations out of 1000 (max. 500000)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
