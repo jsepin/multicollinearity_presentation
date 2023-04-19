@@ -20,6 +20,8 @@
 \usetikzlibrary{arrows.meta}
 \usetikzlibrary{positioning,fit,calc}
 \usepackage{varwidth}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{decorations.shapes}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -58,7 +60,8 @@
 
 
 % Logo
-\pgfdeclareimage[height=.9cm]{uzhlogo}{uzh_logo_e_pos}
+%\pgfdeclareimage[height=.9cm]{logo}{uzh_logo_e_pos}
+\pgfdeclareimage[height=.9cm]{logo}{biogen_logo}
 
 % adjust margins
 \setbeamersize{text margin left=1.25cm}
@@ -223,7 +226,7 @@
 \defbeamertemplate*{headline}{uzh}
 {%
   \begin{beamercolorbox}[sep=0.25cm]{}
-	\pgfuseimage{uzhlogo}\par
+	\pgfuseimage{logo}\par
 	\vspace*{1.6mm}\hspace*{10mm}\usebeamerfont{uzhunit}\uzhunit\enspace\usebeamerfont{uzhunitext}\uzhunitext
       \end{beamercolorbox}
       \vspace*{-1.8mm}

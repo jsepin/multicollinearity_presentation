@@ -183,7 +183,7 @@ For simplicity without $site$ and with continuous variables!
 \begin{figure}[H]
 \centering
 \resizebox{8.5cm}{!}{%
-\begin{tikzpicture}
+\begin{tikzpicture}[decoration={crosses, shape size=5pt, segment length = 20pt}]
 		\node[cloud] (T) {T};
     \node[cloud,below right=3cm and 3cm of T] (weight) {$\textit{weight}_0$};
     \node[cloud, right=1.5cm of weight] (height) {$\textit{height}_0$};
@@ -198,14 +198,18 @@ For simplicity without $site$ and with continuous variables!
     \draw (height) -- (Y);
     \draw (BMI) -- (Y);
     \draw (weight) to [bend right=80] (Y);
-    \draw[gray!10] (BMI) -- (T);
-    \draw[gray!10] (weight) -- (T);
-    \draw[gray!10] (height) to [bend left=80] (T);
+    \draw[gray!80] (BMI) -- (T);
+    \draw[gray!80] (weight) -- (T);
+    \draw[gray!80] (height) to [bend left=80] (T);
+    
+    \draw [decorate, red] (BMI) -- (T);
+    \draw [decorate, red] (weight) -- (T);
+    \draw [decorate, red] (height) to [bend left=80] (T);
 
 \end{tikzpicture}
 }
 \vspace*{-1.5cm}
-\caption{Successful randomization removes confounding}
+\caption{Randomization removes confounding}
 \end{figure}
 \vspace*{-0.8cm}
 \begin{center}
@@ -226,13 +230,12 @@ $\boxed{\text{BMI}=\frac{\text{weight (kg)}}{\text{height (m)}^2}}$
 \end{frame}
 \begin{frame}[plain]{But why this model?}
 %===================================================
-ICH E9:
+\cite{ICHE9}:
 \textit{
 \tiny{
-"In multicentre trials (see Glossary) the randomisation procedures should be organised centrally. It is advisable to have a separate random scheme for each centre, i.e. to stratify by centre or to allocate several whole blocks to each centre. More generally, stratification by important prognostic factors measured at baseline (e.g. severity of disease, age, sex, etc.) may sometimes be valuable in order to promote balanced allocation within strata; this has greater potential benefit in small trials. The use of more than two or three stratification factors is rarely necessary, is less successful at achieving balance and is logistically troublesome. The use of a dynamic allocation procedure (see below) may help to achieve balance across a number of stratification factors simultaneously provided the rest of the trial procedures can be adjusted to accommodate an approach of this type.}\footnotesize{
-\cbox{Factors on which randomisation has been stratified should be accounted for later in the analysis.}"
+"In multicentre trials (see Glossary) the randomisation procedures should be organised centrally. It is advisable to have a separate random scheme for each centre, i.e. to stratify by centre or to allocate several whole blocks to each centre. More generally, stratification by important prognostic factors measured at baseline (e.g. severity of disease, age, sex, etc.) may sometimes be valuable in order to promote balanced allocation within strata; this has greater potential benefit in small trials.}\footnotesize{\cbox{The use of more than two or three stratification factors is rarely necessary, is less successful at achieving balance and is logistically troublesome.}}\tiny{The use of a dynamic allocation procedure (see below) may help to achieve balance across a number of stratification factors simultaneously provided the rest of the trial procedures can be adjusted to accommodate an approach of this type.}\footnotesize{\cbox{Factors on which randomisation has been stratified should be accounted for later in the analysis.}"}
 }
-}
+
 
 %===================================================
 \end{frame}
@@ -278,8 +281,9 @@ Recipes remain secret!
 
 \begin{itemize}
 \item Collinearity increases uncertainty (but only for the variables that contribute)
-\item "Avoiding" collinearity may induce bias
+\item "Killing" collinearity may induce bias
 \item Randomization to the help
+\item Trade-off between explanatory power and sparsity (bias-variance dilemma)
 \end{itemize}
 
 
