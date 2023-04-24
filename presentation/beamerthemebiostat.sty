@@ -25,8 +25,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-
-
 \usepackage[T1]{fontenc}
 \usepackage[latin9]{inputenc}
 \usepackage[english]{babel}
@@ -44,7 +42,7 @@
 \hypersetup{%
     colorlinks=true,%
     urlcolor=uzh@orange,% defined below
-    %backref=page,
+    backref=page,
     pdfstartview=Fit,%
     pdfpagelayout=SinglePage,%
     pdfpagemode=UseThumbs
@@ -60,8 +58,7 @@
 
 
 % Logo
-%\pgfdeclareimage[height=.9cm]{logo}{uzh_logo_e_pos}
-\pgfdeclareimage[height=.9cm]{logo}{biogen_logo}
+\pgfdeclareimage[height=.9cm]{uzhlogo}{uzh_logo_e_pos}
 
 % adjust margins
 \setbeamersize{text margin left=1.25cm}
@@ -69,7 +66,7 @@
 
 % fonts
 \usefonttheme{default}
-%\RequirePackage{uarial}
+\RequirePackage{uarial}
 \setbeamerfont{title}{size={\fontsize{20}{24pt}\selectfont},parent=structure,series=\bfseries}
 \setbeamerfont{subtitle}{size={\fontsize{9}{11pt}\selectfont},series=\mdseries}
 \setbeamerfont{author}{size={\fontsize{9}{11pt}\selectfont},series=\mdseries}
@@ -97,7 +94,7 @@
 \setbeamercolor{itemize item}{fg=black}
 \setbeamercolor{enumerate item}{fg=black}
 \RequirePackage{url}
-\def\UrlFont{\sffamily\color{uzh@orange}}
+\def\UrlFont{\sffamily\color{uzh@grey}}%Jerome
 
 
 % Inner Theme
@@ -226,7 +223,7 @@
 \defbeamertemplate*{headline}{uzh}
 {%
   \begin{beamercolorbox}[sep=0.25cm]{}
-	\pgfuseimage{logo}\par
+	\pgfuseimage{uzhlogo}\par
 	\vspace*{1.6mm}\hspace*{10mm}\usebeamerfont{uzhunit}\uzhunit\enspace\usebeamerfont{uzhunitext}\uzhunitext
       \end{beamercolorbox}
       \vspace*{-1.8mm}
@@ -292,6 +289,19 @@
 \setbeamercolor{bibliography entry location}{use=normal text,fg=normal text.fg}
 \setbeamercolor{bibliography entry note}{use=normal text,fg=normal text.fg}
 
+% Cite green
+\let\oldcite=\cite
+\let\oldcitet=\citet
+\let\oldcitep=\citep 
+\renewcommand{\citet}[2][]{\textcolor{green}{\oldcitet[#1]{#2}}}
+\renewcommand{\citep}[2][]{\textcolor{green}{\oldcitep[#1]{#2}}}
+\renewcommand{\cite}[2][]{\textcolor{green}{\oldcite[#1]{#2}}}
+
+
+
+
+
+
 % Notes
 \defbeamertemplate*{note page}{uzh}
 {%
@@ -314,6 +324,36 @@
 
 \mode
 <all>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Jerome
+\newcommand{\squeezeup}{\vspace{-5mm}}
+\usepackage{soul}
+\newcommand{\mathcolorbox}[2]{\colorbox{#1}{$\displaystyle #2$}}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\usetikzlibrary{arrows.meta}
+\usepackage{varwidth}
+\usetikzlibrary{positioning}
+
+% Highlight stuff
+\let\HL\hl
+\renewcommand\hl{%
+  \let\set@color\beamerorig@set@color
+  \let\reset@color\beamerorig@reset@color
+  \HL}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[margin=2em,labelfont=bf]{caption}
+
+% Code float
+\floatstyle{ruled}
+\newfloat{program}{h!t}{ext}
+\floatname{program}{\textsf{R}-Code}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

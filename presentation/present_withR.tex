@@ -131,7 +131,7 @@ $\boxed{\log(y)\sim trt + weight_{cat.} + BMI_{cont.}+ site}$
 
 For simplicity without $site$ and with continuous variables!
 
-"True" model: $\log(y)\sim 5 + 5\cdot trt + 2\cdot weight + 2\cdot height$
+"True" model: $\log(y)\sim 5 +  2\cdot trt +  2\cdot weight +  2\cdot height$
 
 
 
@@ -168,6 +168,23 @@ For simplicity without $site$ and with continuous variables!
 \end{knitrout}
 \end{center}
 \end{figure}
+
+%===================================================
+\end{frame}
+\begin{frame}{Summary of results}
+%===================================================
+
+Variance of least-squares estimator:
+\begin{align*}
+\text{Var}\left(\boldsymbol{\hat\beta}\right)=\underbrace{\hat{\sigma}}_{\substack{\text{Residual standard}\\\text{error (RSE)}}}\cdot \underbrace{\left(\boldsymbol{X}^\top\boldsymbol{X}\right)^{-1}}_{\text{Collinearity}}
+\end{align*}
+
+$\downarrow\text{Var}\left(\boldsymbol{\hat\beta}\right)$ means more power. How to achieve?
+\begin{itemize}
+\item $\downarrow$ RSE: Risk of biased results in terms of generalization
+\item $\downarrow$ Collinearity: Risk of biased effect estimates
+\end{itemize}
+
 
 %===================================================
 \end{frame}
@@ -208,7 +225,7 @@ For simplicity without $site$ and with continuous variables!
 
 \end{tikzpicture}
 }
-\vspace*{-1.5cm}
+\vspace*{-1.cm}
 \caption{Randomization removes confounding}
 \end{figure}
 \vspace*{-0.8cm}

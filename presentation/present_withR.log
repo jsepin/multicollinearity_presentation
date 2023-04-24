@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.4.12)  19 APR 2023 14:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.4.12)  24 APR 2023 13:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1110,18 +1110,90 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count362
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 51.
+Package hyperref Info: Option `colorlinks' set `true' on input line 49.
+
+
+Package hyperref Warning: Option `backref' has already been used,
+(hyperref)                setting the option has no effect on input line 49.
+
+(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/arial\uarial.sty
+Package: uarial 2006/03/21 1.0 (WaS)
+)
 \frameheightmhead=\skip75
 \frameheightohead=\skip76
-)
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/upquote\upquote.sty
+
+(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul.sty
+Package: soul 2023-02-18 v3.0 Permit use of UTF-8 characters in soul (HO)
+
+(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul-ori.sty
+Package: soul-ori 2023-02-18 v3.0 letterspacing/underlining (mf)
+\SOUL@word=\toks54
+\SOUL@lasttoken=\toks55
+\SOUL@syllable=\toks56
+\SOUL@cmds=\toks57
+\SOUL@buffer=\toks58
+\SOUL@token=\toks59
+\SOUL@syllgoal=\dimen331
+\SOUL@syllwidth=\dimen332
+\SOUL@charkern=\dimen333
+\SOUL@hyphkern=\dimen334
+\SOUL@dimen=\dimen335
+\SOUL@dimeni=\dimen336
+\SOUL@minus=\count363
+\SOUL@comma=\count364
+\SOUL@apo=\count365
+\SOUL@grave=\count366
+\SOUL@spaceskip=\skip77
+\SOUL@ttwidth=\dimen337
+\SOUL@uldp=\dimen338
+\SOUL@ulht=\dimen339
+))
+(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/03/12 v3.6j Customizing captions (AR)
+
+(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
+\caption@tempdima=\dimen340
+\captionmargin=\dimen341
+\caption@leftmargin=\dimen342
+\caption@rightmargin=\dimen343
+\caption@width=\dimen344
+\caption@indent=\dimen345
+\caption@parindent=\dimen346
+\caption@hangindent=\dimen347
+Package caption Info: beamer document class detected.
+
+(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption-beamer
+.sto
+File: caption-beamer.sto 2022/01/06 v2.0c Adaption of the caption package to th
+e beamer document classes (AR)
+))
+\c@caption@flags=\count367
+\c@continuedfloat=\count368
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: Hyperref support is turned off
+(caption)             because hyperref has stopped early.
+Package caption Info: longtable package is loaded.
+
+(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+))
+\@float@every@program=\toks60
+\c@program=\count369
+) (C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/upquote\upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
+)
+LaTeX Font Info:    Trying to load font information for T1+ua1 on input line 75
+.
+ (C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/arial\t1ua1.fd
+File: t1ua1.fd 2006/03/21 Fontinst v1.928 font definitions for T1/ua1.
 )
 (C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
 ftex.def
 File: l3backend-pdftex.def 2023-03-30 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count363
+\l__color_backend_stack_int=\count370
 \l__pdf_internal_box=\box111
 ) (present_withR.aux)
 \openout1 = `present_withR.aux'.
@@ -1183,17 +1255,17 @@ LaTeX Font Info:    ... okay on input line 75.
 (C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
 kii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count364
-\scratchdimen=\dimen331
+\scratchcounter=\count371
+\scratchdimen=\dimen348
 \scratchbox=\box112
-\nofMPsegments=\count365
-\nofMParguments=\count366
-\everyMPshowfont=\toks54
-\MPscratchCnt=\count367
-\MPscratchDim=\dimen332
-\MPnumerator=\count368
-\makeMPintoPDFobject=\count369
-\everyMPtoPDFconversion=\toks55
+\nofMPsegments=\count372
+\nofMParguments=\count373
+\everyMPshowfont=\toks61
+\MPscratchCnt=\count374
+\MPscratchDim=\dimen349
+\MPnumerator=\count375
+\makeMPintoPDFobject=\count376
+\everyMPtoPDFconversion=\toks62
 )
 (C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
 base.sty
@@ -1220,53 +1292,38 @@ LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
 (Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 75.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 75.
+(Font)                  OT1/cmr/bx/n --> T1/ua1/b/n on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 75.
+(Font)                  OT1/cmr/bx/n --> T1/ua1/b/n on input line 75.
 LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 75.
+(Font)                  OT1/cmss/m/n --> T1/ua1/m/n on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 75.
+(Font)                  OT1/cmss/bx/n --> T1/ua1/m/n on input line 75.
 LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 75.
+(Font)                  OT1/cmr/m/it --> T1/ua1/m/it on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 75.
+(Font)                  OT1/cmr/bx/it --> T1/ua1/m/it on input line 75.
 LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 75.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 75.
+(Font)                  T1/ua1/m/n --> T1/ua1/b/n on input line 75.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 75.
+(Font)                  T1/ua1/m/it --> T1/ua1/b/it on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
 (Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 75.
+(Font)                  T1/ua1/b/n --> T1/ua1/b/n on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 75.
+(Font)                  T1/ua1/m/n --> T1/ua1/b/n on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 75.
+(Font)                  T1/ua1/m/it --> T1/ua1/b/it on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 75.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 75.
-LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 75
-.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 75
-.
-LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 75.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 75
-.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 75.
 
 (C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-
 basic-dictionary-English.dict
@@ -1291,18 +1348,13 @@ Dictionary: translator-numbers-dictionary, Language: English
 (C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-
 theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (present_withR.nav)
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+ (present_withR.nav) [1{C:/Users/jsepin/AppData/Local/MiKTeX/fonts/map/pdftex/p
+dftex.map}
 
-LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <20> not available
-(Font)              size <20.74> substituted on input line 76.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/bx/n' in size <20> not available
-(Font)              size <20.74> substituted on input line 76.
-
-[1{C:/Users/jsepin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
-
- <./biogen_logo.png>]
+ <./uzh_logo_e_pos.pdf>]
 LaTeX Font Info:    Trying to load font information for U+msa on input line 92.
 
 
@@ -1321,26 +1373,19 @@ LaTeX Font Info:    Trying to load font information for U+wasy on input line 92
 (C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 92.
-
-(C:\Users\jsepin\AppData\Local\Programs\MiKTeX\tex/latex/sansmathaccent\ot1math
-kerncmss.fd
-File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
-thkerncmss.
-) [2
+[2
 
 ] [3
 
 ]
-<figures/figcollinearitydata-1.pdf, id=54, 722.7pt x 289.08pt>
+<figures/figcollinearitydata-1.pdf, id=48, 722.7pt x 289.08pt>
 File: figures/figcollinearitydata-1.pdf Graphic file (type pdf)
 <use figures/figcollinearitydata-1.pdf>
 Package pdftex.def Info: figures/figcollinearitydata-1.pdf  used on input line 
 125.
 (pdftex.def)             Requested size: 293.06349pt x 117.22673pt.
 
-Overfull \vbox (4.32428pt too high) detected at line 125
+Overfull \vbox (3.67226pt too high) detected at line 125
  []
 
 [4
@@ -1348,7 +1393,7 @@ Overfull \vbox (4.32428pt too high) detected at line 125
  <./figures/figcollinearitydata-1.pdf>] [5
 
 ]
-<figures/figresults-1.pdf, id=73, 794.97pt x 578.16pt>
+<figures/figresults-1.pdf, id=67, 794.97pt x 578.16pt>
 File: figures/figresults-1.pdf Graphic file (type pdf)
 <use figures/figresults-1.pdf>
 Package pdftex.def Info: figures/figresults-1.pdf  used on input line 173.
@@ -1356,44 +1401,69 @@ Package pdftex.def Info: figures/figresults-1.pdf  used on input line 173.
  [6
 
  <./figures/figresults-1.pdf>]
-Overfull \hbox (5.7626pt too wide) in paragraph at lines 220--220
- [][]$[][]$ 
- []
+LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10.95> not available
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 190.
+
+LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <8> not available
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 190.
+
+LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 190.
 
 
-Overfull \hbox (4.25151pt too wide) in paragraph at lines 220--220
- [][]$[][]$ 
- []
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 190.
+
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 190.
 
 [7
 
-] [8
-
 ]
-Overfull \hbox (21.36371pt too wide) in paragraph at lines 241--241
-\T1/cmss/m/it/6 als.[][][][][][]The 
+Overfull \hbox (8.00926pt too wide) in paragraph at lines 237--237
+ [][]$[][]$ 
  []
 
 
-Overfull \hbox (19.14014pt too wide) in paragraph at lines 241--241
-\T1/cmss/m/it/6 type.[][][][][][]\T1/cmss/m/it/9 " 
+Overfull \hbox (6.32295pt too wide) in paragraph at lines 237--237
+ [][]$[][]$ 
  []
 
-[9
+[8
 
-] [10
+] [9
 
 ]
-<appenzeller.png, id=117, 858.20625pt x 407.5225pt>
+Overfull \hbox (19.674pt too wide) in paragraph at lines 258--258
+\T1/ua1/m/it/6 als.[][][][][][]The 
+ []
+
+
+Overfull \hbox (16.20299pt too wide) in paragraph at lines 258--258
+\T1/ua1/m/it/6 type.[][][][][][]\T1/ua1/m/it/9 " 
+ []
+
+[10
+
+]
+Overfull \vbox (1.67107pt too high) detected at line 287
+ []
+
+[11
+
+]
+<appenzeller.png, id=119, 858.20625pt x 407.5225pt>
 File: appenzeller.png Graphic file (type png)
 <use appenzeller.png>
-Package pdftex.def Info: appenzeller.png  used on input line 278.
+Package pdftex.def Info: appenzeller.png  used on input line 295.
 (pdftex.def)             Requested size: 263.75534pt x 125.24246pt.
- [11
+ [12
 
- <./appenzeller.png>] [12
+ <./appenzeller.png>] [13
 
-] (present_withR.bbl) [13
+] (present_withR.bbl) [14
 
 ]
 \tf@nav=\write6
@@ -1405,47 +1475,36 @@ Package pdftex.def Info: appenzeller.png  used on input line 278.
 \tf@snm=\write8
 \openout8 = `present_withR.snm'.
 
-
-(present_withR.aux)
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 0.74pt have occurred.
-
+ (present_withR.aux)
 Package rerunfilecheck Info: File `present_withR.out' has not changed.
 (rerunfilecheck)             Checksum: AEA4B6A8AE45636C75679C2F0DFA4493;93.
  ) 
 Here is how much of TeX's memory you used:
- 30751 strings out of 476326
- 647118 string characters out of 5787250
+ 32461 strings out of 476326
+ 679427 string characters out of 5787250
  1864660 words of memory out of 5000000
- 50479 multiletter control sequences out of 15000+600000
- 539877 words of font info for 98 fonts, out of 8000000 for 9000
+ 52156 multiletter control sequences out of 15000+600000
+ 684947 words of font info for 132 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 130i,14n,122p,1171b,901s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\jsepin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecs
-i1000.pk> <C:\Users\jsepin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
-600\ecsi0900.pk> <C:\Users\jsepin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
-/ec/dpi600\ecsi0600.pk> <C:\Users\jsepin\AppData\Local\MiKTeX\fonts/pk/ljfour/j
-knappen/ec/dpi600\ecss1000.pk> <C:\Users\jsepin\AppData\Local\MiKTeX\fonts/pk/l
-jfour/jknappen/ec/dpi600\ecss0600.pk> <C:\Users\jsepin\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecss0800.pk> <C:\Users\jsepin\AppData\Local\MiK
-TeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsi1095.pk> <C:\Users\jsepin\AppData\Lo
-cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1095.pk> <C:\Users\jsepin\App
-Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1200.pk> <C:\Users\jse
-pin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0500.pk> <C:\Us
-ers\jsepin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0900.pk>
- <C:\Users\jsepin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx2
-074.pk> <C:\Users\jsepin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecsx0700.pk><C:/Users/jsepin/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmmi10.pfb><C:/Users/jsepin/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmmi8.pfb><C:/Users/jsepin/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/jsepin/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/jsepin/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/jsepi
-n/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on present_withR.pdf (13 pages, 1542096 bytes).
+ 130i,21n,122p,1171b,910s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{C:/Users/jsepin/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C
+:/Users/jsepin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cme
+x10.pfb><C:/Users/jsepin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmmi10.pfb><C:/Users/jsepin/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmmi8.pfb><C:/Users/jsepin/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/jsepin/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/jsepin/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/jsepin/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users
+/jsepin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+<C:/Users/jsepin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/arial/ua1b8a.pfb
+><C:/Users/jsepin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/arial/ua1bi8a.p
+fb><C:/Users/jsepin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/arial/ua1r8a.
+pfb><C:/Users/jsepin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/arial/ua1ri8
+a.pfb>
+Output written on present_withR.pdf (14 pages, 1510002 bytes).
 PDF statistics:
- 561 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
+ 201 PDF objects out of 1000 (max. 8388607)
+ 32 named destinations out of 1000 (max. 500000)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
